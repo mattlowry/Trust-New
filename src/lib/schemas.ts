@@ -107,7 +107,11 @@ export function generateLocalBusinessSchema(): JsonLd {
       opens: SITE_CONFIG.hours.open,
       closes: SITE_CONFIG.hours.close,
     },
-    areaServed: ORANGE_COUNTY_CITIES.map((city) => ({
+    areaServed: [
+      ...ORANGE_COUNTY_CITIES,
+      ...LA_COUNTY_CITIES,
+      ...SAN_DIEGO_COUNTY_CITIES,
+    ].map((city) => ({
       '@type': 'City',
       name: city,
       containedInPlace: {

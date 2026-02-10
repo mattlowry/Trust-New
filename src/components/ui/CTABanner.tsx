@@ -22,29 +22,23 @@ export function CTABanner({
   showPhone = true,
 }: CTABannerProps) {
   return (
-    <section className="relative overflow-hidden bg-teal-900 py-16 sm:py-20">
+    <section className="relative overflow-hidden bg-teal-950 py-20 sm:py-24">
       {/* Subtle background pattern overlay */}
-      <div
-        className="absolute inset-0 opacity-10"
-        aria-hidden="true"
-        style={{
-          backgroundImage:
-            'radial-gradient(circle at 25% 50%, rgba(255,255,255,0.15) 0%, transparent 50%), radial-gradient(circle at 75% 50%, rgba(255,255,255,0.1) 0%, transparent 50%)',
-        }}
-      />
+      <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-teal-900/40 to-slate-900/40" />
 
-      <div className="relative z-10 mx-auto max-w-3xl px-4 text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+      <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
+        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6 drop-shadow-md">
           {title}
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-lg text-teal-100/90">
+        <p className="mx-auto max-w-2xl text-lg text-teal-100/80 mb-10 leading-relaxed">
           {subtitle}
         </p>
 
-        <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
             href="/insurance"
-            className="inline-flex h-10 items-center justify-center rounded-md bg-secondary px-8 text-base font-medium text-white shadow-sm transition-colors hover:bg-secondary/90"
+            className="inline-flex h-12 items-center justify-center rounded-lg bg-teal-500 hover:bg-teal-400 px-8 text-base font-semibold text-white shadow-lg shadow-teal-900/20 transition-all hover:scale-105"
           >
             Verify Insurance Now
           </Link>
@@ -52,7 +46,7 @@ export function CTABanner({
           {showPhone && (
             <a
               href={SITE_CONFIG.phone.href}
-              className="inline-flex items-center gap-2 rounded-md border border-white/30 px-6 py-2.5 text-base font-medium text-white transition-colors hover:bg-white/10"
+              className="inline-flex h-12 items-center gap-2 rounded-lg border border-white/20 hover:border-white/40 bg-white/5 hover:bg-white/10 px-8 text-base font-semibold text-white transition-all backdrop-blur-sm"
             >
               <Phone className="h-5 w-5" />
               {SITE_CONFIG.phone.formatted}
