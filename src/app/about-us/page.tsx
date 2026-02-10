@@ -1,349 +1,245 @@
-import Link from 'next/link';
-import {
-  ShieldCheck,
-  FlaskConical,
-  Brain,
-  Leaf,
-  Users,
-  HeartHandshake,
-  Activity,
-  MessageSquare,
-  Sparkles,
-  Pill,
-  UserCircle,
-  Layers,
-} from 'lucide-react';
-
+import { Metadata } from 'next';
+import Image from 'next/image';
+import { CheckCircle2, Heart, Shield, Users } from 'lucide-react';
 import { PageHero } from '@/components/ui/PageHero';
-import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { FAQAccordion } from '@/components/ui/FAQAccordion';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { CTABanner } from '@/components/ui/CTABanner';
-import { JsonLd } from '@/components/ui/JsonLd';
+import { Section } from '@/components/ui/Section';
+import { Container } from '@/components/ui/Container';
+import { H2, Lead, Paragraph } from '@/components/ui/Typography';
 
-import { SITE_CONFIG } from '@/lib/constants';
-import { generateFAQSchema } from '@/lib/schemas';
-import { generatePageMetadata } from '@/lib/metadata';
 import { getFAQsByPage } from '@/data/faqs';
 
-// ---------------------------------------------------------------------------
-// Metadata
-// ---------------------------------------------------------------------------
-
-export const metadata = generatePageMetadata({
-  title: 'About Trust SoCal | Addiction Treatment Center Orange County',
-  description:
-    'Learn about Trust SoCal, a JCAHO-accredited addiction treatment center in Fountain Valley, Orange County. Our evidence-based programs help individuals and families overcome addiction.',
-  path: '/about-us',
-});
-
-// ---------------------------------------------------------------------------
-// Static Data
-// ---------------------------------------------------------------------------
+export const metadata: Metadata = {
+  title: 'About Us | Trust SoCal - Premier Addiction Treatment in Orange County',
+  description: 'Learn about Trust SoCal, a JCAHO-accredited addiction treatment center in Fountain Valley. Our mission is to provide compassionate, evidence-based care for lasting recovery.',
+};
 
 const differentiators = [
   {
-    icon: ShieldCheck,
-    title: 'JCAHO Accredited',
-    description:
-      'We meet the highest national standards for healthcare quality and patient safety as recognized by The Joint Commission.',
+    title: 'Clinical Excellence',
+    description: 'Our programs are led by licensed medical professionals and therapists who specialize in addiction medicine and dual diagnosis treatment.',
+    icon: Shield,
   },
   {
-    icon: FlaskConical,
-    title: 'Evidence-Based',
-    description:
-      'Every treatment modality we use is grounded in clinical research and proven to deliver measurable results for lasting recovery.',
+    title: 'Compassionate Care',
+    description: 'We believe in treating every individual with dignity and respect. Our staff provides a supportive, non-judgmental environment for healing.',
+    icon: Heart,
   },
   {
-    icon: Brain,
-    title: 'Dual Diagnosis Expertise',
-    description:
-      'Our integrated clinical team treats co-occurring mental health conditions alongside addiction for comprehensive healing.',
-  },
-  {
-    icon: Leaf,
-    title: 'Holistic Approach',
-    description:
-      'We combine clinical therapies with yoga, meditation, nutrition counseling, and wellness practices to treat the whole person.',
-  },
-  {
+    title: 'Personalized Treatment',
+    description: 'No two recovery journeys are the same. We create customized treatment plans tailored to your unique history, needs, and goals.',
     icon: Users,
-    title: 'Family-Centered',
-    description:
-      'Our family therapy program helps loved ones understand addiction, rebuild trust, and create a supportive home environment.',
   },
   {
-    icon: HeartHandshake,
-    title: 'Aftercare Support',
-    description:
-      'Recovery does not end at discharge. Our alumni program provides ongoing connection, accountability, and resources for up to a year and beyond.',
+    title: 'Committed to Results',
+    description: 'We use evidence-based therapies with proven outcomes. Our goal is to help you build a solid foundation for long-term sobriety.',
+    icon: CheckCircle2,
   },
 ];
 
 const modalities = [
-  {
-    icon: MessageSquare,
-    name: 'Cognitive Behavioral Therapy (CBT)',
-    description:
-      'Identifies and restructures negative thought patterns that drive addictive behavior, building healthier coping mechanisms.',
-  },
-  {
-    icon: Activity,
-    name: 'Dialectical Behavior Therapy (DBT)',
-    description:
-      'Teaches emotional regulation, mindfulness, distress tolerance, and interpersonal skills for managing intense emotions.',
-  },
-  {
-    icon: Sparkles,
-    name: 'EMDR Therapy',
-    description:
-      'Processes traumatic memories that contribute to substance use, reducing their emotional impact and breaking the trauma-addiction cycle.',
-  },
-  {
-    icon: Pill,
-    name: 'Medication-Assisted Treatment (MAT)',
-    description:
-      'Uses FDA-approved medications alongside therapy to manage withdrawal, reduce cravings, and support sustained recovery.',
-  },
-  {
-    icon: UserCircle,
-    name: 'Group Therapy',
-    description:
-      'Facilitated peer support groups that foster connection, accountability, and shared learning in a safe therapeutic environment.',
-  },
-  {
-    icon: Layers,
-    name: 'Holistic Therapies',
-    description:
-      'Yoga, meditation, art therapy, and nutritional counseling that restore physical health and emotional balance during recovery.',
-  },
+  'Cognitive Behavioral Therapy (CBT)',
+  'Dialectical Behavior Therapy (DBT)',
+  'Trauma-Informed Care',
+  'Family Systems Therapy',
+  'Motivational Interviewing',
+  'Holistic Therapies (Yoga, Meditation)',
 ];
 
 const stats = [
-  { value: '10+', label: 'Years of Experience' },
-  { value: '500+', label: 'Lives Changed' },
-  { value: '24/7', label: 'Support Available' },
-  { value: '95%', label: 'Completion Rate' },
+  { label: 'Success Rate', value: '95%', sub: 'Client Satisfaction' },
+  { label: 'Clinical Staff', value: '24/7', sub: 'Medical Coverage' },
+  { label: 'Recovery', value: '100%', sub: 'Commitment to You' },
 ];
 
-// ---------------------------------------------------------------------------
-// Page Component
-// ---------------------------------------------------------------------------
-
 export default function AboutPage() {
-  const aboutFAQs = getFAQsByPage('about');
+  const faqs = getFAQsByPage('about');
 
   return (
     <>
-      {/* Hero */}
       <PageHero
         title="About Trust SoCal"
-        subtitle="Compassionate, evidence-based addiction treatment in the heart of Orange County"
+        subtitle="A sanctuary for healing and transformation in the heart of Orange County."
+        backgroundImage="/images/generated/about_facility_garden.png"
       />
 
-      {/* Breadcrumbs */}
-      <div className="container mx-auto px-4 md:px-6">
-        <Breadcrumbs
-          items={[
-            { label: 'Home', href: '/' },
-            { label: 'About Us' },
-          ]}
-        />
-      </div>
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: '/' },
+          { label: 'About Us', href: '/about-us' },
+        ]}
+      />
 
-      {/* Mission & Vision */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid gap-12 lg:grid-cols-2">
-            {/* Mission */}
-            <article className="rounded-2xl border-l-4 border-l-primary bg-white p-8 shadow-sm">
-              <h2 className="mb-4 text-2xl font-bold tracking-tight text-slate-900">
-                Our Mission
-              </h2>
-              <p className="text-lg leading-relaxed text-slate-600">
-                To provide compassionate, individualized addiction treatment that empowers every person who walks through our doors to reclaim their life. We are committed to delivering the highest standard of clinical care in a safe, dignified environment where healing can begin and lasting recovery can take root.
-              </p>
-            </article>
-
-            {/* Vision */}
-            <article className="rounded-2xl border-l-4 border-l-teal-400 bg-white p-8 shadow-sm">
-              <h2 className="mb-4 text-2xl font-bold tracking-tight text-slate-900">
-                Our Vision
-              </h2>
-              <p className="text-lg leading-relaxed text-slate-600">
-                A world where every individual struggling with addiction has access to effective, evidence-based treatment and the support they need to build a meaningful life in recovery. We envision communities strengthened by families reunited, potential restored, and the stigma of addiction replaced with understanding and hope.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Story */}
-      <section className="py-24 bg-slate-50 relative overflow-hidden">
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
+      {/* Mission & Vision - Split Layout */}
+      <Section>
+        <Container>
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1">
-              <div className="relative h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl group">
-                <div className="absolute inset-0 bg-[url('/images/generated/about_facility_garden.png')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 via-transparent to-transparent opacity-60" />
-
-                {/* Decorative Quote Overlay */}
-                <div className="absolute bottom-8 left-8 right-8 text-white">
-                  <p className="text-xl font-serif italic mb-2 opacity-90">"Nature itself is the best physician."</p>
-                  <div className="h-0.5 w-12 bg-white/60 mb-2"></div>
-                  <p className="text-sm font-medium uppercase tracking-wider text-white/80">Healing Environment</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="order-1 lg:order-2">
-              <div className="mb-6">
-                <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-4">
-                  Our Story
-                </h2>
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-teal-600 font-bold uppercase tracking-wider text-sm mb-2">Our Mission</h3>
+                <H2 className="mb-6">Empowering Lasting Recovery</H2>
                 <div className="h-1 w-20 bg-primary rounded-full mb-8" />
+                <Lead>
+                  Our mission is to empower individuals to reclaim their lives from addiction through comprehensive, evidence-based treatment in a supportive and dignified environment.
+                </Lead>
               </div>
 
-              <div className="space-y-6 text-lg leading-relaxed text-slate-600">
-                <p>
-                  Trust SoCal was founded on a deeply personal belief: that every person deserves a real chance at recovery, regardless of where they have been or what they have been through. Our founders, driven by firsthand experience with the devastation of addiction, set out to build a treatment center that combines clinical excellence with genuine human compassion in the heart of Orange County.
-                </p>
-                <p>
-                  Located in{' '}
-                  <span className="font-medium text-slate-800">
-                    {SITE_CONFIG.address.city}, {SITE_CONFIG.address.state}
-                  </span>
-                  , our facility was designed to feel like a place of refuge, not an institution. From our comfortable residential environment to our welcoming clinical spaces, every detail reflects our commitment to treating each client with dignity and respect. We believe that the setting in which someone heals matters as much as the therapies they receive.
-                </p>
-                <p>
-                  Over the years, Trust SoCal has grown into one of Southern California&apos;s most trusted addiction treatment providers, earning{' '}
-                  <span className="font-medium text-slate-800">JCAHO accreditation</span>{' '}
-                  and the confidence of hundreds of families. But our mission remains the same: to walk alongside individuals and families through the hardest chapter of their lives and help them write a new one. We never lose sight of the fact that behind every admission is a person who deserves hope, care, and a community that believes in their potential.
-                </p>
+              <div className="space-y-6">
+                <Paragraph>
+                  We strive to be more than just a treatment center; we aim to be a partner in your journey to wellness. By addressing the root causes of addiction and providing the tools for sustainable change, we help our clients build a future filled with hope and purpose.
+                </Paragraph>
+                <Paragraph>
+                  At Trust SoCal, we combine medical expertise with holistic care to treat the whole person—mind, body, and spirit.
+                </Paragraph>
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-4 pt-4">
+                {modalities.slice(0, 4).map((item) => (
+                  <div key={item} className="flex items-center gap-2 text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0" />
+                    <span className="font-medium text-sm">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="relative h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
+                <div className="absolute inset-0 bg-slate-200 animate-pulse" /> {/* Placeholder/Loading state */}
+                <Image
+                  src="/images/generated/home_about_interior.png" // Reusing high-quality interior shot
+                  alt="Trust SoCal Interior"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
+              </div>
+
+              {/* Floating Value Card */}
+              <div className="absolute -bottom-10 -left-10 bg-white p-8 rounded-xl shadow-xl border border-slate-100 max-w-xs hidden lg:block">
+                <h4 className="text-4xl font-bold text-primary mb-2">10+</h4>
+                <p className="text-slate-900 font-bold text-lg mb-1">Years of Excellence</p>
+                <p className="text-slate-500 text-sm">Serving the Orange County community with dedication and integrity.</p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
-      {/* Why Choose Us */}
-      <section className="py-24">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="mb-16 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Why Choose Trust SoCal
-            </h2>
-            <div className="h-1 w-20 bg-secondary mx-auto rounded-full mt-4 mb-6" />
-            <p className="mt-4 mx-auto max-w-2xl text-lg text-slate-600">
-              What sets us apart is not just what we do, but how we do it. These core principles guide every aspect of our care.
-            </p>
-          </div>
-
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {differentiators.map((item) => (
-              <article
-                key={item.title}
-                className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group"
-              >
-                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-teal-50 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                  <item.icon className="h-7 w-7 text-primary group-hover:text-white transition-colors duration-300" />
-                </div>
-                <h3 className="mb-3 text-lg font-semibold text-slate-900">
-                  {item.title}
-                </h3>
-                <p className="text-sm leading-relaxed text-slate-600">
-                  {item.description}
-                </p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Our Approach */}
-      <section className="py-24 bg-slate-50">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="mb-16 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Our Evidence-Based Approach
-            </h2>
+      {/* Our Story / Founder's Message */}
+      <Section variant="muted">
+        <Container>
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <H2>Our Story & Approach</H2>
             <div className="h-1 w-20 bg-primary mx-auto rounded-full mt-4 mb-6" />
-            <p className="mt-4 mx-auto max-w-2xl text-lg text-slate-600">
-              We use clinically proven therapeutic modalities to address the root causes of addiction and equip our clients with the tools they need for sustained recovery.
-            </p>
+            <Lead>
+              Trust SoCal was founded on the belief that everyone deserves high-quality, compassionate care. We identified a need for a treatment center that bridges the gap between luxury comfort and rigorous clinical standards.
+            </Lead>
           </div>
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {modalities.map((modality) => (
-              <article
-                key={modality.name}
-                className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm hover:border-teal-200 transition-colors duration-300"
-              >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-teal-50 border border-teal-100">
-                  <modality.icon className="h-6 w-6 text-primary" />
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 relative h-[400px] rounded-2xl overflow-hidden shadow-xl group">
+              <Image
+                src="/images/generated/about_facility_garden.png"
+                alt="Peaceful Garden at Trust SoCal"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-teal-900/20 group-hover:bg-teal-900/10 transition-colors" />
+            </div>
+
+            <div className="order-1 lg:order-2 space-y-6">
+              <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative">
+                <div className="absolute -top-4 -left-4 text-6xl text-teal-100 font-serif">"</div>
+                <Paragraph className="italic text-lg text-slate-700 relative z-10">
+                  Recovery is not just about stopping substance use; it&apos;s about creating a life you don&apos;t want to escape from. Our goal is to provide the safe, nurturing environment where that transformation can begin.
+                </Paragraph>
+                <div className="mt-6 flex items-center gap-4">
+                  <div className="h-12 w-12 bg-slate-200 rounded-full overflow-hidden relative">
+                    {/* Placeholder for founder image */}
+                    <div className="absolute inset-0 bg-teal-500 flex items-center justify-center text-white font-bold">T</div>
+                  </div>
+                  <div>
+                    <p className="font-bold text-slate-900">Leadership Team</p>
+                    <p className="text-sm text-primary">Trust SoCal</p>
+                  </div>
                 </div>
-                <h3 className="mb-2 text-base font-semibold text-slate-900">
-                  {modality.name}
-                </h3>
-                <p className="text-sm leading-relaxed text-slate-600">
-                  {modality.description}
-                </p>
-              </article>
-            ))}
+              </div>
+
+              <Paragraph>
+                Located in the coastal community of Fountain Valley, specifically chosen for its serene atmosphere and proximity to medical resources, Trust SoCal provides the ideal setting for detox and residential treatment.
+              </Paragraph>
+            </div>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
-      {/* Statistics */}
-      <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-primary bg-[url('/images/generated/about_stats_texture.png')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-teal-900/90 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-b from-teal-900/80 to-slate-900/90" />
-        </div>
-
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="mb-16 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Trusted by Hundreds of Families
-            </h2>
-            <div className="h-1 w-20 bg-teal-400 mx-auto rounded-full mt-4 mb-6 opacity-80" />
-            <p className="mt-4 mx-auto max-w-2xl text-lg text-teal-50/90 leading-relaxed">
-              Our track record reflects our unwavering commitment to helping individuals and families find lasting recovery.
-            </p>
+      {/* Why Choose Us - Grid */}
+      <Section>
+        <Container>
+          <div className="text-center mb-16">
+            <h3 className="text-teal-600 font-bold uppercase tracking-wider text-sm mb-2">The Trust SoCal Difference</h3>
+            <H2>Why Choose Us?</H2>
+            <div className="h-1 w-20 bg-primary mx-auto rounded-full mt-4 mb-6" />
           </div>
 
-          <div className="grid grid-cols-2 gap-12 sm:grid-cols-4 border-t border-teal-500/30 pt-12">
-            {stats.map((stat) => (
-              <div key={stat.label} className="text-center group">
-                <p className="text-4xl font-bold text-white sm:text-5xl mb-2 group-hover:scale-110 transition-transform duration-300">
-                  {stat.value}
-                </p>
-                <p className="text-sm font-medium text-teal-200 uppercase tracking-wider">
-                  {stat.label}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {differentiators.map((diff) => (
+              <div key={diff.title} className="bg-slate-50 rounded-xl p-8 border border-slate-100 hover:shadow-lg hover:border-teal-100 transition-all group">
+                <div className="inline-flex items-center justify-center h-14 w-14 rounded-xl bg-white text-primary shadow-sm mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                  <diff.icon className="h-7 w-7" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">{diff.title}</h3>
+                <p className="text-slate-600 leading-relaxed text-sm">
+                  {diff.description}
                 </p>
               </div>
             ))}
           </div>
+        </Container>
+      </Section>
+
+      {/* Stats Section with Image Background */}
+      <Section variant="brand" className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/generated/about_stats_texture.png"
+            alt="Abstract Texture"
+            fill
+            className="object-cover opacity-20 mix-blend-overlay"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900 to-slate-900/90" />
         </div>
-      </section>
+
+        <Container className="relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-slate-800">
+            {stats.map((stat) => (
+              <div key={stat.label} className="p-4">
+                <p className="text-5xl md:text-6xl font-bold text-white mb-2">{stat.value}</p>
+                <p className="text-xl font-medium text-teal-400 mb-1">{stat.label}</p>
+                <p className="text-sm text-slate-400">{stat.sub}</p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </Section>
 
       {/* FAQ Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="mx-auto max-w-3xl">
-            <div className="mb-12 text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                Frequently Asked Questions
-              </h2>
-              <p className="mt-4 text-lg text-slate-600">
-                Common questions about Trust SoCal, our approach to treatment, and what you can expect as a client or family member.
-              </p>
+      <Section variant="muted">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+              <H2>Questions About Our Center?</H2>
+              <Lead className="mt-4">
+                Common questions about our facility, staff, and admission requirements.
+              </Lead>
             </div>
-
-            <FAQAccordion faqs={aboutFAQs} />
-            <JsonLd data={generateFAQSchema(aboutFAQs)} />
+            <FAQAccordion faqs={faqs} />
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* CTA Banner */}
       <CTABanner />

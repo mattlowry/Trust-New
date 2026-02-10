@@ -10,6 +10,9 @@ import { InsuranceLogos } from '@/components/ui/InsuranceLogos';
 import { FAQAccordion } from '@/components/ui/FAQAccordion';
 import { CTABanner } from '@/components/ui/CTABanner';
 import { JsonLd } from '@/components/ui/JsonLd';
+import { Section } from '@/components/ui/Section';
+import { Container } from '@/components/ui/Container';
+import { H2, Lead, Paragraph } from '@/components/ui/Typography';
 
 import { SITE_CONFIG, ORANGE_COUNTY_CITIES } from '@/lib/constants';
 import { generateFAQSchema, generateWebSiteSchema } from '@/lib/schemas';
@@ -31,11 +34,11 @@ export default function Home() {
 
       <Features />
 
-      // About Preview Section
-      <section className="py-24 overflow-hidden relative">
+      {/* About Preview Section */}
+      <Section className="overflow-hidden relative">
         <div className="absolute inset-0 bg-slate-50 skew-y-3 transform origin-top-left -z-10 h-full w-full" />
 
-        <div className="container px-4 md:px-6 mx-auto">
+        <Container>
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative group">
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
@@ -54,16 +57,16 @@ export default function Home() {
 
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-4">
+                <H2 className="mb-4">
                   Healing with Compassion & Excellence
-                </h2>
+                </H2>
                 <div className="h-1 w-20 bg-primary rounded-full mb-8" />
-                <p className="text-lg text-slate-600 leading-relaxed mb-6">
+                <Lead className="mb-6">
                   At Trust SoCal, we believe that recovery is possible for everyone. Our facility in Orange County provides a sanctuary for healing, combining luxury amenities with rigorous, evidence-based clinical care.
-                </p>
-                <p className="text-lg text-slate-600 leading-relaxed">
+                </Lead>
+                <Paragraph size="lg">
                   We don&apos;t just treat the addiction; we treat the whole person. From our comfortable accommodations to our gourmet nutrition plans and holistic therapies, every aspect of your stay is designed to support your journey to wellness.
-                </p>
+                </Paragraph>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -95,20 +98,20 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* Addiction Types Preview */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
+      <Section>
+        <Container>
           <div className="text-center mb-14">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            <H2>
               Types of Addiction We Treat
-            </h2>
+            </H2>
             <div className="h-1 w-20 bg-secondary mx-auto rounded-full mt-4 mb-6" />
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
+            <Lead className="max-w-2xl mx-auto">
               We provide specialized, evidence-based treatment for a wide range of substance use disorders. Every program is tailored to your unique needs.
-            </p>
+            </Lead>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -129,23 +132,23 @@ export default function Home() {
               </Button>
             </Link>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-slate-50 relative overflow-hidden">
+      <Section variant="muted" className="relative overflow-hidden">
         {/* Background Decorative Pattern */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
 
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <Container className="relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            <H2>
               What Our Clients Say
-            </h2>
+            </H2>
             <div className="h-1 w-20 bg-primary mx-auto rounded-full mt-4 mb-6" />
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
+            <Lead className="max-w-2xl mx-auto">
               Real stories from individuals and families whose lives have been transformed through our programs.
-            </p>
+            </Lead>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -159,48 +162,48 @@ export default function Home() {
               />
             ))}
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* Insurance Accepted */}
       <InsuranceLogos />
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
+      <Section>
+        <Container>
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+              <H2>
                 Frequently Asked Questions
-              </h2>
-              <p className="mt-4 text-lg text-slate-600">
+              </H2>
+              <Lead className="mt-4">
                 Get answers to common questions about our addiction treatment programs, admissions process, and what to expect.
-              </p>
+              </Lead>
             </div>
 
             <FAQAccordion faqs={homeFAQs} />
             <JsonLd data={generateFAQSchema(homeFAQs)} />
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* Local SEO Block */}
-      <section className="py-24 bg-slate-50 relative overflow-hidden">
+      <Section variant="muted" className="relative overflow-hidden">
         <div className="absolute inset-y-0 right-0 w-full lg:w-1/2 bg-[url('/images/generated/home_orange_county_coast.png')] bg-cover bg-center opacity-10 lg:opacity-100 lg:mask-image-linear-to-l" style={{ maskImage: 'linear-gradient(to left, black 60%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to left, black 60%, transparent 100%)' }} />
 
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <Container className="relative z-10">
           <div className="lg:w-1/2 pr-0 lg:pr-12">
             <div className="text-left mb-8">
               <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-50 mb-6 shadow-sm border border-teal-100">
                 <MapPin className="h-7 w-7 text-primary" />
               </div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-4">
+              <H2 className="mb-4">
                 Serving Orange County & Southern California
-              </h2>
+              </H2>
               <div className="h-1 w-20 bg-secondary rounded-full mb-6" />
-              <p className="text-lg text-slate-600 leading-relaxed">
+              <Lead>
                 Located in the heart of {SITE_CONFIG.address.city}, {SITE_CONFIG.address.stateCode}, Trust SoCal provides premier addiction treatment services to individuals and families throughout the region. Our facility offers a serene escape while remaining accessible to major Southern California communities.
-              </p>
+              </Lead>
             </div>
 
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-sm border border-slate-100 mb-8">
@@ -229,8 +232,8 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* CTA Banner */}
       <CTABanner />

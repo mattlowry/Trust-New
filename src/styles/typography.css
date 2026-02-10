@@ -1,0 +1,46 @@
+@layer components {
+
+    /* Headings */
+    .text-heading-1 {
+        @apply text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl;
+    }
+
+    .text-heading-2 {
+        @apply text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl;
+    }
+
+    .text-heading-3 {
+        @apply text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl;
+    }
+
+    .text-heading-4 {
+        @apply text-xl font-bold tracking-tight text-slate-900;
+    }
+
+    /* Body Text */
+    .text-body-lead {
+        @apply text-lg text-slate-600 leading-relaxed;
+    }
+
+    .text-body-lg {
+        @apply text-lg text-slate-600 leading-relaxed;
+    }
+
+    .text-body-base {
+        @apply text-base text-slate-600 leading-relaxed;
+    }
+
+    .text-body-sm {
+        @apply text-sm text-slate-500 leading-relaxed;
+    }
+
+    /* Brand Accents */
+    .text-brand-gradient {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-teal-500;
+    }
+
+    /* Utilities */
+    .text-balance {
+        text-wrap: balance;
+    }
+}

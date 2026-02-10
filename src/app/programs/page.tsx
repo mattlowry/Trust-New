@@ -8,6 +8,10 @@ import { FAQAccordion } from '@/components/ui/FAQAccordion';
 import { CTABanner } from '@/components/ui/CTABanner';
 import { JsonLd } from '@/components/ui/JsonLd';
 import { ProgramCard } from '@/components/ui/ProgramCard';
+import { Section } from '@/components/ui/Section';
+import { Container } from '@/components/ui/Container';
+import { H2, Lead, Paragraph } from '@/components/ui/Typography';
+
 import { generatePageMetadata } from '@/lib/metadata';
 import { generateFAQSchema } from '@/lib/schemas';
 import { programs } from '@/data/programs';
@@ -40,26 +44,22 @@ export default function ProgramsPage() {
       />
 
       {/* 2. Breadcrumbs */}
-      <div className="container mx-auto max-w-6xl">
-        <Breadcrumbs
-          items={[
-            { label: 'Home', href: '/' },
-            { label: 'Treatment Programs' },
-          ]}
-        />
-      </div>
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: '/' },
+          { label: 'Treatment Programs', href: '/programs' },
+        ]}
+      />
 
       {/* 3. Continuum of Care */}
-      <section className="py-16 sm:py-20">
-        <div className="container mx-auto max-w-6xl px-4">
+      <Section>
+        <Container>
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Our Continuum of Care
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
+            <H2>Our Continuum of Care</H2>
+            <Lead className="mx-auto mt-4 max-w-2xl">
               Recovery is not one-size-fits-all. Our step-down model guides you
               from intensive stabilization through independent, supported living.
-            </p>
+            </Lead>
           </div>
 
           {/* Desktop: horizontal flow */}
@@ -117,20 +117,18 @@ export default function ProgramsPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* 4. Programs Grid */}
-      <section className="bg-slate-50 py-16 sm:py-20">
-        <div className="container mx-auto max-w-6xl px-4">
+      <Section variant="muted">
+        <Container>
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              All Treatment Programs
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
+            <H2>All Treatment Programs</H2>
+            <Lead className="mx-auto mt-4 max-w-2xl">
               Each program is designed to address a specific stage or need in
               your recovery journey. Click any program to learn more.
-            </p>
+            </Lead>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -145,12 +143,12 @@ export default function ProgramsPage() {
               />
             ))}
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* 5. Treatment Approach */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto max-w-6xl px-4">
+      <Section>
+        <Container>
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl group">
@@ -165,20 +163,18 @@ export default function ProgramsPage() {
             </div>
 
             <div className="order-1 lg:order-2">
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-6">
-                Our Evidence-Based Approach
-              </h2>
+              <H2 className="mb-6">Our Evidence-Based Approach</H2>
               <div className="h-1 w-20 bg-primary rounded-full mb-8" />
 
-              <div className="prose prose-lg text-slate-600">
-                <p className="mb-6">
+              <div className="space-y-6">
+                <Paragraph>
                   At Trust SoCal, every treatment plan is grounded in clinical
                   research and tailored to the individual. We integrate
                   evidence-based modalities such as <span className="font-semibold text-primary">Cognitive Behavioral Therapy (CBT)</span>, <span className="font-semibold text-primary">Dialectical Behavior Therapy (DBT)</span>, EMDR, and
                   medication-assisted treatment (MAT) with holistic practices
                   including mindfulness, yoga, and nutritional counseling.
-                </p>
-                <p>
+                </Paragraph>
+                <Paragraph>
                   Our multidisciplinary team of physicians, psychiatrists, licensed
                   therapists, and certified counselors collaborates daily to ensure
                   every client receives coordinated, comprehensive care. From the
@@ -186,7 +182,7 @@ export default function ProgramsPage() {
                   network, we are committed to supporting your recovery with
                   compassion, clinical excellence, and respect for your unique
                   journey.
-                </p>
+                </Paragraph>
               </div>
 
               <div className="mt-8 flex gap-4">
@@ -205,20 +201,18 @@ export default function ProgramsPage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* 6. FAQ */}
       {pageFaqs.length > 0 && (
-        <section className="bg-slate-50 py-16 sm:py-20">
-          <div className="container mx-auto max-w-3xl px-4">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl text-center mb-10">
-              Frequently Asked Questions
-            </h2>
+        <Section variant="muted">
+          <Container className="max-w-3xl">
+            <H2 className="text-center mb-10">Frequently Asked Questions</H2>
             <FAQAccordion faqs={pageFaqs} />
             <JsonLd data={generateFAQSchema(pageFaqs)} />
-          </div>
-        </section>
+          </Container>
+        </Section>
       )}
 
       {/* 7. CTA Banner */}

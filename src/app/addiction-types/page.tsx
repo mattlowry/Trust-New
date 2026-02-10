@@ -10,6 +10,10 @@ import { FAQAccordion } from '@/components/ui/FAQAccordion';
 import { CTABanner } from '@/components/ui/CTABanner';
 import { JsonLd } from '@/components/ui/JsonLd';
 import { AddictionTypeCard } from '@/components/ui/AddictionTypeCard';
+import { Section } from '@/components/ui/Section';
+import { Container } from '@/components/ui/Container';
+import { H2, Lead, Paragraph } from '@/components/ui/Typography';
+
 import { generatePageMetadata } from '@/lib/metadata';
 import { generateFAQSchema } from '@/lib/schemas';
 import { addictionTypes } from '@/data/addiction-types';
@@ -47,22 +51,20 @@ export default function AddictionTypesPage() {
       />
 
       {/* 2. Breadcrumbs */}
-      <div className="container mx-auto max-w-6xl">
-        <Breadcrumbs
-          items={[
-            { label: 'Home', href: '/' },
-            { label: 'Addiction Types' },
-          ]}
-        />
-      </div>
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: '/' },
+          { label: 'Addiction Types', href: '/addiction-types' },
+        ]}
+      />
 
       {/* 3. Understanding Addiction */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      <Section className="relative overflow-hidden">
         {/* Abstract Background Element */}
         <div className="absolute top-0 right-0 -mr-24 -mt-24 w-96 h-96 bg-teal-50 rounded-full blur-3xl opacity-60 z-0"></div>
         <div className="absolute bottom-0 left-0 -ml-24 -mb-24 w-80 h-80 bg-orange-50 rounded-full blur-3xl opacity-60 z-0"></div>
 
-        <div className="container mx-auto max-w-6xl px-4 relative z-10">
+        <Container className="relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <div className="relative h-[550px] w-full rounded-2xl overflow-hidden shadow-2xl group">
@@ -79,18 +81,16 @@ export default function AddictionTypesPage() {
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-6">
-                Understanding Addiction
-              </h2>
+              <H2 className="mb-6">Understanding Addiction</H2>
               <div className="h-1 w-20 bg-primary rounded-full mb-8" />
 
-              <div className="prose prose-lg text-slate-600">
-                <p className="mb-6 leading-relaxed">
+              <div className="space-y-6">
+                <Paragraph>
                   Addiction is a chronic, relapsing medical condition that affects
                   the brain&apos;s reward circuitry, motivation centers, and
                   decision-making processes. It is <span className="font-semibold text-slate-800">not a matter of willpower</span>, moral weakness, or personal choice. Like diabetes or hypertension, addiction involves measurable changes in brain chemistry and structure that require professional medical treatment to address effectively.
-                </p>
-                <p className="leading-relaxed">
+                </Paragraph>
+                <Paragraph>
                   Substance use disorders develop through a complex interaction of
                   genetic predisposition, environmental factors, mental health
                   conditions, and the pharmacological properties of the substance
@@ -98,7 +98,7 @@ export default function AddictionTypesPage() {
                   treatable medical condition and design individualized treatment
                   plans that address the biological, psychological, and social
                   dimensions of the disease.
-                </p>
+                </Paragraph>
 
                 <div className="mt-8 grid grid-cols-2 gap-4">
                   <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
@@ -113,21 +113,19 @@ export default function AddictionTypesPage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* 4. Addiction Types Grid */}
-      <section className="bg-slate-50 py-16 sm:py-20">
-        <div className="container mx-auto max-w-6xl px-4">
+      <Section variant="muted">
+        <Container>
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Substances We Treat
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
+            <H2>Substances We Treat</H2>
+            <Lead className="mx-auto mt-4 max-w-2xl">
               Trust SoCal provides specialized treatment for a wide range of
               substance use disorders. Select any substance below to learn
               more about our approach.
-            </p>
+            </Lead>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -140,23 +138,21 @@ export default function AddictionTypesPage() {
               />
             ))}
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* 5. Signs & Symptoms */}
-      <section className="py-16 sm:py-20">
-        <div className="container mx-auto max-w-4xl px-4">
+      <Section>
+        <Container className="max-w-4xl">
           <div className="flex items-center justify-center gap-3 mb-8">
             <AlertTriangle className="h-7 w-7 text-secondary flex-shrink-0" />
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-              General Warning Signs of Addiction
-            </h2>
+            <H2 className="!mb-0">General Warning Signs of Addiction</H2>
           </div>
-          <p className="text-slate-600 mb-8 text-center max-w-2xl mx-auto">
+          <Paragraph className="mb-8 text-center max-w-2xl mx-auto">
             While every substance produces unique effects, the following
             behavioral and psychological signs are common across all forms
             of addiction.
-          </p>
+          </Paragraph>
           <ul className="space-y-3">
             {warningSignsList.map((sign, i) => (
               <li key={i} className="flex items-start gap-3">
@@ -165,20 +161,18 @@ export default function AddictionTypesPage() {
               </li>
             ))}
           </ul>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* 6. Treatment Approach */}
-      <section className="bg-slate-50 py-16 sm:py-20">
-        <div className="container mx-auto max-w-4xl px-4">
+      <Section variant="muted">
+        <Container className="max-w-4xl">
           <div className="flex items-center justify-center gap-3 mb-8">
             <Stethoscope className="h-7 w-7 text-primary flex-shrink-0" />
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-              How Trust SoCal Treats Substance Use Disorders
-            </h2>
+            <H2 className="!mb-0">How We Treat Substance Use Disorders</H2>
           </div>
-          <div className="prose prose-lg mx-auto text-slate-600">
-            <p>
+          <div className="space-y-6">
+            <Paragraph>
               Our clinical team develops an individualized treatment plan for
               every client based on a comprehensive medical, psychiatric, and
               psychosocial assessment completed within the first 48 hours of
@@ -186,8 +180,8 @@ export default function AddictionTypesPage() {
               medication-assisted treatment (MAT), evidence-based individual
               and group therapies, holistic wellness practices, and robust
               aftercare planning.
-            </p>
-            <p>
+            </Paragraph>
+            <Paragraph>
               We treat the whole person, not just the substance. Co-occurring
               mental health conditions such as depression, anxiety, PTSD, and
               bipolar disorder are addressed simultaneously through our dual
@@ -195,22 +189,20 @@ export default function AddictionTypesPage() {
               medical detox, residential treatment, PHP, and IOP -- ensures
               that each client receives the right level of support at every
               stage of their recovery.
-            </p>
+            </Paragraph>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* 7. FAQ */}
       {pageFaqs.length > 0 && (
-        <section className="py-16 sm:py-20">
-          <div className="container mx-auto max-w-3xl px-4">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl text-center mb-10">
-              Frequently Asked Questions
-            </h2>
+        <Section>
+          <Container className="max-w-3xl">
+            <H2 className="text-center mb-10">Frequently Asked Questions</H2>
             <FAQAccordion faqs={pageFaqs} />
             <JsonLd data={generateFAQSchema(pageFaqs)} />
-          </div>
-        </section>
+          </Container>
+        </Section>
       )}
 
       {/* 8. CTA Banner */}

@@ -6,6 +6,9 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { FAQAccordion } from '@/components/ui/FAQAccordion';
 import { CTABanner } from '@/components/ui/CTABanner';
 import { ContactForm } from '@/components/ui/ContactForm';
+import { Section } from '@/components/ui/Section';
+import { Container } from '@/components/ui/Container';
+import { H2, Lead, Paragraph, H3 } from '@/components/ui/Typography';
 import { JsonLd } from '@/components/ui/JsonLd';
 
 import { SITE_CONFIG, ORANGE_COUNTY_CITIES } from '@/lib/constants';
@@ -44,33 +47,29 @@ export default function ContactPage() {
       />
 
       {/* Breadcrumbs */}
-      <div className="container mx-auto px-4 md:px-6">
-        <Breadcrumbs
-          items={[
-            { label: 'Home', href: '/' },
-            { label: 'Contact Us' },
-          ]}
-        />
-      </div>
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: '/' },
+          { label: 'Contact Us', href: '/contact' },
+        ]}
+      />
 
       {/* ----------------------------------------------------------------- */}
       {/* Contact Info + Form -- Two-Column Layout                           */}
       {/* ----------------------------------------------------------------- */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 md:px-6">
+      <Section>
+        <Container>
           <div className="grid gap-12 lg:grid-cols-2">
             {/* ---- Left Column: Contact Information ---- */}
             <div>
-              <h2 className="mb-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                Get in Touch
-              </h2>
+              <H2 className="mb-2">Get in Touch</H2>
               <div className="mb-8 h-1 w-20 rounded-full bg-primary" />
-              <p className="mb-10 text-lg leading-relaxed text-slate-600">
+              <Lead className="mb-10">
                 Whether you are seeking help for yourself or a loved one, our
                 compassionate admissions team is available around the clock to
                 answer your questions and guide you through the next steps. All
                 calls and inquiries are completely confidential.
-              </p>
+              </Lead>
 
               {/* Semantic address block */}
               <address className="not-italic space-y-6">
@@ -164,34 +163,30 @@ export default function ContactPage() {
 
             {/* ---- Right Column: Contact Form ---- */}
             <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm lg:p-10">
-              <h2 className="mb-2 text-2xl font-bold tracking-tight text-slate-900">
-                Send Us a Message
-              </h2>
-              <p className="mb-8 text-slate-600">
+              <H3 className="mb-2">Send Us a Message</H3>
+              <Paragraph className="mb-8 text-slate-600">
                 Fill out the form below and a member of our admissions team will
                 reach out within 24 hours. All information is kept strictly
                 confidential.
-              </p>
+              </Paragraph>
               <ContactForm />
             </div>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* ----------------------------------------------------------------- */}
       {/* Google Maps Embed                                                  */}
       {/* ----------------------------------------------------------------- */}
-      <section className="bg-slate-50 py-20">
-        <div className="container mx-auto px-4 md:px-6">
+      <Section variant="muted">
+        <Container>
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Our Location
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
+            <H2>Our Location</H2>
+            <Lead className="mx-auto mt-4 max-w-2xl">
               Located in the heart of Fountain Valley, Trust SoCal is easily
               accessible from anywhere in Orange County and the greater Southern
               California area.
-            </p>
+            </Lead>
           </div>
 
           <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
@@ -219,23 +214,21 @@ export default function ContactPage() {
               Get Directions on Google Maps
             </a>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* ----------------------------------------------------------------- */}
       {/* Cities Served                                                      */}
       {/* ----------------------------------------------------------------- */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 md:px-6">
+      <Section>
+        <Container>
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Proudly Serving Orange County
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
+            <H2>Proudly Serving Orange County</H2>
+            <Lead className="mx-auto mt-4 max-w-2xl">
               Trust SoCal provides addiction treatment services to individuals
               and families across Orange County and the greater Southern
               California region. No matter where you are, help is within reach.
-            </p>
+            </Lead>
           </div>
 
           <div className="mx-auto max-w-4xl">
@@ -260,30 +253,26 @@ export default function ContactPage() {
               to learn more.
             </p>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* ----------------------------------------------------------------- */}
       {/* FAQ Section                                                        */}
       {/* ----------------------------------------------------------------- */}
-      <section className="bg-slate-50 py-20">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="mx-auto max-w-3xl">
-            <div className="mb-12 text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                Frequently Asked Questions
-              </h2>
-              <p className="mt-4 text-lg text-slate-600">
-                Have questions about getting started? Find answers to the most
-                common questions about contacting Trust SoCal and beginning your
-                recovery journey.
-              </p>
-            </div>
-
-            <FAQAccordion faqs={contactFAQs} />
+      <Section variant="muted">
+        <Container className="max-w-3xl">
+          <div className="mb-12 text-center">
+            <H2>Frequently Asked Questions</H2>
+            <Lead className="mt-4">
+              Have questions about getting started? Find answers to the most
+              common questions about contacting Trust SoCal and beginning your
+              recovery journey.
+            </Lead>
           </div>
-        </div>
-      </section>
+
+          <FAQAccordion faqs={contactFAQs} />
+        </Container>
+      </Section>
 
       {/* CTA Banner */}
       <CTABanner
