@@ -186,32 +186,16 @@ function MobileNavItem({
 // ---------------------------------------------------------------------------
 
 export function Header() {
-    const [isScrolled, setIsScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 10);
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    // Always use dark text since background is always white
+    const navTextClass = "text-slate-600 hover:text-primary font-bold";
 
     const closeMobileMenu = useCallback(() => setMobileMenuOpen(false), []);
 
-    // Dynamic text color classes
-    const navTextClass = isScrolled
-        ? "text-slate-600 hover:text-primary"
-        : "text-white/90 hover:text-white";
-
     return (
         <header
-            className={cn(
-                "fixed top-0 z-50 w-full transition-all duration-300",
-                isScrolled
-                    ? "bg-white/95 backdrop-blur-md shadow-sm py-3"
-                    : "bg-transparent py-6"
-            )}
+            className="fixed top-0 z-50 w-full bg-white/95 backdrop-blur-md shadow-sm py-2 transition-all duration-300"
         >
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex items-center justify-between">
@@ -224,27 +208,21 @@ export function Header() {
                                 key={item.href}
                                 item={item}
                                 className={navTextClass}
-                                isScrolled={isScrolled}
+                                isScrolled={true} // Always behave as 'scrolled' (dark text)
                             />
                         ))}
 
                         <div className="flex items-center gap-4 ml-4">
                             <a
                                 href={SITE_CONFIG.phone.href}
-                                className={cn(
-                                    "hidden lg:flex items-center gap-2 text-sm font-semibold transition-colors",
-                                    isScrolled ? "text-primary hover:text-primary/80" : "text-white hover:text-white/80"
-                                )}
+                                className="hidden lg:flex items-center gap-2 text-sm font-bold text-primary hover:text-primary/80 transition-colors"
                             >
                                 <Phone className="h-4 w-4" />
                                 {SITE_CONFIG.phone.formatted}
                             </a>
                             <Button
                                 size="sm"
-                                className={cn(
-                                    "hidden md:inline-flex font-semibold shadow-lg",
-                                    !isScrolled && "bg-white text-teal-900 hover:bg-white/90"
-                                )}
+                                className="hidden md:inline-flex font-bold shadow-lg"
                             >
                                 Get Help Now
                             </Button>
@@ -253,10 +231,7 @@ export function Header() {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className={cn(
-                            "md:hidden p-2 transition-colors",
-                            isScrolled ? "text-slate-900" : "text-white"
-                        )}
+                        className="md:hidden p-2 text-slate-900 transition-colors"
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
                     >
