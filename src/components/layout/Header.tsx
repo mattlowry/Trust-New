@@ -14,7 +14,7 @@ import { mainNavigation, type NavItem } from "@/data/navigation";
 // Desktop Dropdown
 // ---------------------------------------------------------------------------
 
-function DesktopNavItem({ item }: { item: NavItem }) {
+function DesktopNavItem({ item, className, isScrolled }: { item: NavItem; className?: string; isScrolled: boolean }) {
     const [open, setOpen] = useState(false);
     const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -40,7 +40,7 @@ function DesktopNavItem({ item }: { item: NavItem }) {
         return (
             <Link
                 href={item.href}
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                className={cn("text-sm font-semibold transition-colors", className)}
             >
                 {item.name}
             </Link>
@@ -57,12 +57,12 @@ function DesktopNavItem({ item }: { item: NavItem }) {
             {/* Trigger */}
             <Link
                 href={item.href}
-                className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                className={cn("inline-flex items-center gap-1.5 text-sm font-semibold transition-colors", className)}
             >
                 {item.name}
                 <ChevronDown
                     className={cn(
-                        "h-3.5 w-3.5 transition-transform duration-200",
+                        "h-4 w-4 transition-transform duration-200 opacity-70",
                         open && "rotate-180"
                     )}
                 />
@@ -71,35 +71,37 @@ function DesktopNavItem({ item }: { item: NavItem }) {
             {/* Dropdown panel */}
             <div
                 className={cn(
-                    "absolute left-1/2 top-full z-50 mt-2 -translate-x-1/2",
-                    "min-w-[220px] rounded-lg bg-white py-2 shadow-lg ring-1 ring-border",
+                    "absolute left-1/2 top-full z-50 mt-4 -translate-x-1/2",
+                    "min-w-[240px] rounded-xl bg-white p-2 shadow-xl ring-1 ring-black/5",
                     "transition-all duration-200 origin-top",
                     open
                         ? "pointer-events-auto scale-100 opacity-100 translate-y-0"
-                        : "pointer-events-none scale-95 opacity-0 -translate-y-1"
+                        : "pointer-events-none scale-95 opacity-0 -translate-y-2"
                 )}
             >
                 {/* View-all link */}
                 <Link
                     href={item.href}
-                    className="block px-4 py-2 text-xs font-semibold uppercase tracking-wider text-primary hover:bg-muted"
+                    className="block rounded-lg px-4 py-3 text-xs font-bold uppercase tracking-wider text-teal-600 bg-teal-50/50 hover:bg-teal-50"
                     onClick={() => setOpen(false)}
                 >
                     View All {item.name}
                 </Link>
 
-                <div className="my-1 h-px bg-border" />
+                <div className="my-2 h-px bg-slate-100" />
 
-                {item.children.map((child) => (
-                    <Link
-                        key={child.href}
-                        href={child.href}
-                        className="block px-4 py-2 text-sm text-foreground/80 transition-colors hover:bg-muted hover:text-primary"
-                        onClick={() => setOpen(false)}
-                    >
-                        {child.name}
-                    </Link>
-                ))}
+                <div className="flex flex-col gap-1">
+                    {item.children.map((child) => (
+                        <Link
+                            key={child.href}
+                            href={child.href}
+                            className="block rounded-lg px-4 py-2.5 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-50 hover:text-teal-600 hover:translate-x-1"
+                            onClick={() => setOpen(false)}
+                        >
+                            {child.name}
+                        </Link>
+                    ))}
+                </div>
             </div>
         </div>
     );
@@ -197,12 +199,17 @@ export function Header() {
 
     const closeMobileMenu = useCallback(() => setMobileMenuOpen(false), []);
 
+    // Dynamic text color classes
+    const navTextClass = isScrolled
+        ? "text-slate-600 hover:text-primary"
+        : "text-white/90 hover:text-white";
+
     return (
         <header
             className={cn(
                 "fixed top-0 z-50 w-full transition-all duration-300",
                 isScrolled
-                    ? "glass shadow-sm py-3"
+                    ? "bg-white/95 backdrop-blur-md shadow-sm py-3"
                     : "bg-transparent py-6"
             )}
         >
@@ -213,18 +220,32 @@ export function Header() {
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center gap-6 lg:gap-8">
                         {mainNavigation.map((item) => (
-                            <DesktopNavItem key={item.href} item={item} />
+                            <DesktopNavItem
+                                key={item.href}
+                                item={item}
+                                className={navTextClass}
+                                isScrolled={isScrolled}
+                            />
                         ))}
 
                         <div className="flex items-center gap-4 ml-4">
                             <a
                                 href={SITE_CONFIG.phone.href}
-                                className="hidden lg:flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80"
+                                className={cn(
+                                    "hidden lg:flex items-center gap-2 text-sm font-semibold transition-colors",
+                                    isScrolled ? "text-primary hover:text-primary/80" : "text-white hover:text-white/80"
+                                )}
                             >
                                 <Phone className="h-4 w-4" />
                                 {SITE_CONFIG.phone.formatted}
                             </a>
-                            <Button size="sm" className="hidden md:inline-flex">
+                            <Button
+                                size="sm"
+                                className={cn(
+                                    "hidden md:inline-flex font-semibold shadow-lg",
+                                    !isScrolled && "bg-white text-teal-900 hover:bg-white/90"
+                                )}
+                            >
                                 Get Help Now
                             </Button>
                         </div>
@@ -232,7 +253,10 @@ export function Header() {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden p-2 text-foreground"
+                        className={cn(
+                            "md:hidden p-2 transition-colors",
+                            isScrolled ? "text-slate-900" : "text-white"
+                        )}
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
                     >
@@ -243,8 +267,8 @@ export function Header() {
 
             {/* Mobile Navigation Overlay */}
             {mobileMenuOpen && (
-                <div className="absolute top-full left-0 w-full bg-background border-b shadow-lg md:hidden animate-fade-in">
-                    <div className="flex flex-col p-4">
+                <div className="absolute top-full left-0 w-full bg-white border-b shadow-xl md:hidden animate-in slide-in-from-top-5 duration-200">
+                    <div className="flex flex-col p-4 space-y-1">
                         {mainNavigation.map((item) => (
                             <MobileNavItem
                                 key={item.href}
@@ -253,15 +277,15 @@ export function Header() {
                             />
                         ))}
 
-                        <div className="flex flex-col gap-4 mt-6">
+                        <div className="pt-4 mt-4 border-t border-slate-100 flex flex-col gap-3">
                             <a
                                 href={SITE_CONFIG.phone.href}
-                                className="flex items-center justify-center gap-2 text-primary font-semibold py-2"
+                                className="flex items-center justify-center gap-2 text-primary font-bold py-2"
                             >
                                 <Phone className="h-4 w-4" />
                                 {SITE_CONFIG.phone.formatted}
                             </a>
-                            <Button className="w-full">
+                            <Button className="w-full font-bold shadow-md">
                                 Get Help Now
                             </Button>
                         </div>
