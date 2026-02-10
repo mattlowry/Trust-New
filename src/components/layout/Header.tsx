@@ -202,8 +202,8 @@ export function Header() {
             className={cn(
                 "fixed top-0 z-50 w-full transition-all duration-300",
                 isScrolled
-                    ? "glass shadow-sm py-2"
-                    : "bg-transparent py-4"
+                    ? "glass shadow-sm py-3"
+                    : "bg-transparent py-6"
             )}
         >
             <div className="container mx-auto px-4 md:px-6">

@@ -149,29 +149,61 @@ export default function ProgramsPage() {
       </section>
 
       {/* 5. Treatment Approach */}
-      <section className="py-16 sm:py-20">
-        <div className="container mx-auto max-w-4xl px-4">
-          <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl text-center mb-8">
-            Our Evidence-Based Approach
-          </h2>
-          <div className="prose prose-lg mx-auto text-slate-600">
-            <p>
-              At Trust SoCal, every treatment plan is grounded in clinical
-              research and tailored to the individual. We integrate
-              evidence-based modalities such as Cognitive Behavioral Therapy
-              (CBT), Dialectical Behavior Therapy (DBT), EMDR, and
-              medication-assisted treatment (MAT) with holistic practices
-              including mindfulness, yoga, and nutritional counseling.
-            </p>
-            <p>
-              Our multidisciplinary team of physicians, psychiatrists, licensed
-              therapists, and certified counselors collaborates daily to ensure
-              every client receives coordinated, comprehensive care. From the
-              moment you walk through our doors to the day you join our alumni
-              network, we are committed to supporting your recovery with
-              compassion, clinical excellence, and respect for your unique
-              journey.
-            </p>
+      <section className="py-24 bg-white">
+        <div className="container mx-auto max-w-6xl px-4">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl group">
+                <div className="absolute inset-0 bg-[url('/images/generated/programs_therapy_session.png')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent opacity-60" />
+
+                <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm px-6 py-4 rounded-xl shadow-lg border-l-4 border-primary">
+                  <p className="text-sm font-bold text-slate-800 uppercase tracking-wider mb-1">Clinical Excellence</p>
+                  <p className="text-xs text-slate-600">Individualized care plans for every client</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="order-1 lg:order-2">
+              <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-6">
+                Our Evidence-Based Approach
+              </h2>
+              <div className="h-1 w-20 bg-primary rounded-full mb-8" />
+
+              <div className="prose prose-lg text-slate-600">
+                <p className="mb-6">
+                  At Trust SoCal, every treatment plan is grounded in clinical
+                  research and tailored to the individual. We integrate
+                  evidence-based modalities such as <span className="font-semibold text-primary">Cognitive Behavioral Therapy (CBT)</span>, <span className="font-semibold text-primary">Dialectical Behavior Therapy (DBT)</span>, EMDR, and
+                  medication-assisted treatment (MAT) with holistic practices
+                  including mindfulness, yoga, and nutritional counseling.
+                </p>
+                <p>
+                  Our multidisciplinary team of physicians, psychiatrists, licensed
+                  therapists, and certified counselors collaborates daily to ensure
+                  every client receives coordinated, comprehensive care. From the
+                  moment you walk through our doors to the day you join our alumni
+                  network, we are committed to supporting your recovery with
+                  compassion, clinical excellence, and respect for your unique
+                  journey.
+                </p>
+              </div>
+
+              <div className="mt-8 flex gap-4">
+                <div className="flex items-center gap-2 text-sm font-medium text-slate-700 bg-slate-50 px-4 py-2 rounded-lg border border-slate-100">
+                  <div className="h-2 w-2 rounded-full bg-teal-500"></div>
+                  Trauma-Informed
+                </div>
+                <div className="flex items-center gap-2 text-sm font-medium text-slate-700 bg-slate-50 px-4 py-2 rounded-lg border border-slate-100">
+                  <div className="h-2 w-2 rounded-full bg-blue-500"></div>
+                  Dual Diagnosis
+                </div>
+                <div className="flex items-center gap-2 text-sm font-medium text-slate-700 bg-slate-50 px-4 py-2 rounded-lg border border-slate-100">
+                  <div className="h-2 w-2 rounded-full bg-orange-500"></div>
+                  Family-Centered
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

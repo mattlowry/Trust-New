@@ -47,6 +47,15 @@ export const mainNavigation: NavItem[] = [
     ],
   },
   {
+    name: 'Areas Served',
+    href: '/areas-served',
+    children: [
+      { name: 'Orange County', href: '/areas-served' },
+      { name: 'Los Angeles County', href: '/areas-served' },
+      { name: 'San Diego County', href: '/areas-served' },
+    ],
+  },
+  {
     name: 'Insurance',
     href: '/insurance',
   },

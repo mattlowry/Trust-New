@@ -2,7 +2,12 @@
 // Trust SoCal -- JSON-LD Structured Data Schema Generators
 // ---------------------------------------------------------------------------
 
-import { SITE_CONFIG, ORANGE_COUNTY_CITIES } from '@/lib/constants';
+import {
+  SITE_CONFIG,
+  ORANGE_COUNTY_CITIES,
+  LA_COUNTY_CITIES,
+  SAN_DIEGO_COUNTY_CITIES,
+} from '@/lib/constants';
 
 // ---------------------------------------------------------------------------
 // Shared types
