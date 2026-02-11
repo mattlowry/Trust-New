@@ -3,33 +3,33 @@
 // ---------------------------------------------------------------------------
 
 import { BlogCategory, BlogPost } from './types';
-// import { treatmentRecoveryPosts } from './treatment-recovery';
-// import { substanceGuidesPosts } from './substance-guides';
-// import { mentalHealthDualDiagnosisPosts } from './mental-health-dual-diagnosis';
-// import { familyRelationshipsPosts } from './family-relationships';
-// import { orangeCountyResourcesPosts } from './orange-county-resources';
-// import { losAngelesResourcesPosts } from './los-angeles-resources';
-// import { sanDiegoResourcesPosts } from './san-diego-resources';
-// import { insuranceFinancialPosts } from './insurance-financial';
-// import { aftercareRelapsePreventionPosts } from './aftercare-relapse-prevention';
-// import { wellnessLifestylePosts } from './wellness-lifestyle';
+import { treatmentRecoveryPosts } from './treatment-recovery';
+import { substanceGuidesPosts } from './substance-guides';
+import { mentalHealthDualDiagnosisPosts } from './mental-health-dual-diagnosis';
+import { familyRelationshipsPosts } from './family-relationships';
+import { orangeCountyResourcesPosts } from './orange-county-resources';
+import { losAngelesResourcesPosts } from './los-angeles-resources';
+import { sanDiegoResourcesPosts } from './san-diego-resources';
+import { insuranceFinancialPosts } from './insurance-financial';
+import { aftercareRelapsePreventionPosts } from './aftercare-relapse-prevention';
+import { wellnessLifestylePosts } from './wellness-lifestyle';
 
 // ---------------------------------------------------------------------------
 // All posts combined, sorted newest-first
 // ---------------------------------------------------------------------------
 
 export const allBlogPosts: BlogPost[] = [
-  // ...treatmentRecoveryPosts,
-  // ...substanceGuidesPosts,
-  // ...mentalHealthDualDiagnosisPosts,
-  // ...familyRelationshipsPosts,
-  // ...orangeCountyResourcesPosts,
-  // ...losAngelesResourcesPosts,
-  // ...sanDiegoResourcesPosts,
-  // ...insuranceFinancialPosts,
-  // ...aftercareRelapsePreventionPosts,
-  // ...wellnessLifestylePosts,
-] as BlogPost[]).sort(
+  ...treatmentRecoveryPosts,
+  ...substanceGuidesPosts,
+  ...mentalHealthDualDiagnosisPosts,
+  ...familyRelationshipsPosts,
+  ...orangeCountyResourcesPosts,
+  ...losAngelesResourcesPosts,
+  ...sanDiegoResourcesPosts,
+  ...insuranceFinancialPosts,
+  ...aftercareRelapsePreventionPosts,
+  ...wellnessLifestylePosts,
+].sort(
   (a, b) =>
     new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime(),
 );
