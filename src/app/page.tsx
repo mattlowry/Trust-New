@@ -38,7 +38,7 @@ export default function Home() {
       </ScrollReveal>
 
       {/* About Preview Section */}
-      <Section className="overflow-hidden relative">
+      <Section variant="gradient-primary" className="overflow-hidden relative">
         <div className="absolute inset-0 bg-slate-50 skew-y-3 transform origin-top-left -z-10 h-full w-full" />
 
         <Container>
@@ -109,7 +109,7 @@ export default function Home() {
       </Section>
 
       {/* Addiction Types Preview */}
-      <Section>
+      <Section variant="soft-primary">
         <Container>
           <ScrollReveal direction="up">
             <div className="text-center mb-14">
@@ -182,7 +182,7 @@ export default function Home() {
       <InsuranceLogos />
 
       {/* FAQ Section */}
-      <Section>
+      <Section variant="soft-secondary">
         <Container>
           <div className="max-w-3xl mx-auto">
             <ScrollReveal>
@@ -206,7 +206,7 @@ export default function Home() {
 
       {/* Local SEO Block */}
       <Section variant="muted" className="relative overflow-hidden">
-        <div className="absolute inset-y-0 right-0 w-full lg:w-1/2 bg-[url('/images/generated/home_orange_county_coast.png')] bg-cover bg-center opacity-10 lg:opacity-100 lg:mask-image-linear-to-l" style={{ maskImage: 'linear-gradient(to left, black 60%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to left, black 60%, transparent 100%)' }} />
+        <div className="absolute inset-y-0 right-0 w-full lg:w-1/2 bg-[url('/images/enhanced/scenic_coastline.png')] bg-cover bg-center opacity-20 lg:opacity-100 lg:mask-image-linear-to-l" style={{ maskImage: 'linear-gradient(to left, black 60%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to left, black 60%, transparent 100%)' }} />
 
         <Container className="relative z-10">
           <div className="lg:w-1/2 pr-0 lg:pr-12">

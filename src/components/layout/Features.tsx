@@ -2,6 +2,7 @@
 import { Activity, Brain, ShieldCheck, Heart, Users, Sun } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
+import { Section } from "@/components/ui/Section";
 
 const features = [
     {
@@ -56,7 +57,7 @@ const features = [
 
 export function Features() {
     return (
-        <section className="py-24 bg-slate-50 dark:bg-slate-900/50">
+        <Section variant="soft-secondary" className="py-24">
             <div className="container px-4 md:px-6 mx-auto">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
@@ -107,6 +108,6 @@ export function Features() {
                     </Link>
                 </div>
             </div>
-        </section>
+        </Section>
     );
 }

@@ -74,7 +74,7 @@ export default function AboutPage() {
       />
 
       {/* Mission & Vision - Split Layout */}
-      <Section>
+      <Section variant="soft-primary">
         <Container>
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <ScrollReveal direction="right">
@@ -188,7 +188,7 @@ export default function AboutPage() {
       </Section>
 
       {/* Why Choose Us - Grid */}
-      <Section>
+      <Section variant="soft-secondary">
         <Container>
           <div className="text-center mb-16">
             <ScrollReveal>

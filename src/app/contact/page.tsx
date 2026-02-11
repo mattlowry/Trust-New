@@ -57,7 +57,7 @@ export default function ContactPage() {
       {/* ----------------------------------------------------------------- */}
       {/* Contact Info + Form -- Two-Column Layout                           */}
       {/* ----------------------------------------------------------------- */}
-      <Section>
+      <Section variant="soft-primary">
         <Container>
           <div className="grid gap-12 lg:grid-cols-2">
             {/* ---- Left Column: Contact Information ---- */}
@@ -220,7 +220,7 @@ export default function ContactPage() {
       {/* ----------------------------------------------------------------- */}
       {/* Cities Served                                                      */}
       {/* ----------------------------------------------------------------- */}
-      <Section>
+      <Section variant="soft-secondary">
         <Container>
           <div className="mb-12 text-center">
             <H2>Proudly Serving Orange County</H2>

@@ -142,7 +142,7 @@ export default function AddictionTypesPage() {
       </Section>
 
       {/* 5. Signs & Symptoms */}
-      <Section>
+      <Section variant="soft-secondary">
         <Container className="max-w-4xl">
           <div className="flex items-center justify-center gap-3 mb-8">
             <AlertTriangle className="h-7 w-7 text-secondary flex-shrink-0" />
@@ -196,7 +196,7 @@ export default function AddictionTypesPage() {
 
       {/* 7. FAQ */}
       {pageFaqs.length > 0 && (
-        <Section>
+        <Section variant="soft-primary">
           <Container className="max-w-3xl">
             <H2 className="text-center mb-10">Frequently Asked Questions</H2>
             <FAQAccordion faqs={pageFaqs} />

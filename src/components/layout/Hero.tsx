@@ -10,8 +10,7 @@ export function Hero() {
             {/* Background with Gradient Overlay */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-to-r from-teal-900/90 via-slate-900/80 to-slate-900/90 z-10" />
-                {/* Placeholder image - would be replaced by a real high-quality image */}
-                <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-40 mix-blend-overlay animate-fade-in" />
+                <div className="w-full h-full bg-[url('/images/enhanced/hero_background_v2.png')] bg-cover bg-center opacity-50 mix-blend-overlay animate-fade-in" />
             </div>
 
             <div className="container relative z-20 px-4 md:px-6 flex flex-col items-center text-center max-w-5xl mx-auto animate-fade-in">
