@@ -40,7 +40,7 @@ function DesktopNavItem({ item, className, isScrolled }: { item: NavItem; classN
         return (
             <Link
                 href={item.href}
-                className={cn("text-sm font-semibold transition-colors", className)}
+                className={cn("text-xs xl:text-sm font-semibold transition-colors whitespace-nowrap", className)}
             >
                 {item.name}
             </Link>
@@ -57,7 +57,7 @@ function DesktopNavItem({ item, className, isScrolled }: { item: NavItem; classN
             {/* Trigger */}
             <Link
                 href={item.href}
-                className={cn("inline-flex items-center gap-1.5 text-sm font-semibold transition-colors", className)}
+                className={cn("inline-flex items-center gap-1 text-xs xl:text-sm font-semibold transition-colors whitespace-nowrap", className)}
             >
                 {item.name}
                 <ChevronDown
@@ -195,34 +195,34 @@ export function Header() {
 
     return (
         <header
-            className="fixed top-0 z-50 w-full bg-white/95 backdrop-blur-md shadow-sm py-2 transition-all duration-300"
+            className="fixed top-0 z-50 w-full bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300"
         >
-            <div className="container mx-auto px-4 md:px-6">
-                <div className="flex items-center justify-between">
+            <div className="container mx-auto px-4 md:px-6 py-2">
+                <div className="flex items-center justify-between h-10">
                     <Logo />
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center gap-6 lg:gap-8">
+                    <nav className="hidden lg:flex flex-1 items-center justify-end gap-5 xl:gap-7">
                         {mainNavigation.map((item) => (
                             <DesktopNavItem
                                 key={item.href}
                                 item={item}
                                 className={navTextClass}
-                                isScrolled={true} // Always behave as 'scrolled' (dark text)
+                                isScrolled={true}
                             />
                         ))}
 
-                        <div className="flex items-center gap-4 ml-4">
+                        <div className="flex items-center gap-3 ml-3 shrink-0">
                             <a
                                 href={SITE_CONFIG.phone.href}
-                                className="hidden lg:flex items-center gap-2 text-sm font-bold text-primary hover:text-primary/80 transition-colors"
+                                className="hidden xl:flex items-center gap-1.5 text-xs font-bold text-primary hover:text-primary/80 transition-colors whitespace-nowrap"
                             >
-                                <Phone className="h-4 w-4" />
+                                <Phone className="h-3.5 w-3.5" />
                                 {SITE_CONFIG.phone.formatted}
                             </a>
                             <Button
                                 size="sm"
-                                className="hidden md:inline-flex font-bold shadow-lg"
+                                className="font-bold shadow-lg text-xs whitespace-nowrap"
                             >
                                 Get Help Now
                             </Button>
@@ -231,7 +231,7 @@ export function Header() {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden p-2 text-slate-900 transition-colors"
+                        className="lg:hidden p-2 text-slate-900 transition-colors"
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
                     >
@@ -242,7 +242,7 @@ export function Header() {
 
             {/* Mobile Navigation Overlay */}
             {mobileMenuOpen && (
-                <div className="absolute top-full left-0 w-full bg-white border-b shadow-xl md:hidden animate-in slide-in-from-top-5 duration-200">
+                <div className="absolute top-full left-0 w-full bg-white border-b shadow-xl lg:hidden animate-in slide-in-from-top-5 duration-200">
                     <div className="flex flex-col p-4 space-y-1">
                         {mainNavigation.map((item) => (
                             <MobileNavItem

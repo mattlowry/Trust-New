@@ -12,7 +12,7 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     {/* Brand Column */}
                     <div className="space-y-6">
-                        <Logo className="text-white scale-90 origin-left" />
+                        <Logo className="text-white scale-90 origin-left brightness-0 invert" />
                         <p className="text-sm leading-relaxed max-w-xs text-slate-500">
                             {SITE_CONFIG.name} is a premier addiction treatment center in Orange County, dedicated to providing compassionate, evidence-based care for lasting recovery.
                         </p>
