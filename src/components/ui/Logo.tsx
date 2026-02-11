@@ -5,14 +5,14 @@ import Image from "next/image";
 
 export function Logo({ className }: { className?: string }) {
     return (
-        <Link href="/" className={cn("flex items-center gap-2 transition-opacity hover:opacity-90", className)}>
-            <div className="relative h-7 md:h-8 w-auto aspect-[3/1]">
+        <Link href="/" className="flex items-center gap-3 transition-opacity hover:opacity-90 group">
+            <div className={cn("relative h-20 w-auto aspect-[3/1]", className)}>
                 <Image
                     src="/images/logo.png"
                     alt="Trust SoCal"
-                    width={240}
-                    height={80}
-                    className="h-full w-auto object-contain"
+                    fill
+                    sizes="(max-width: 768px) 150px, 240px"
+                    className="object-contain object-left"
                     priority
                 />
             </div>
