@@ -158,7 +158,7 @@ export default function OurTeamPage() {
                 key={item.title}
                 className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1"
               >
-                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-teal-50">
+                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-teal-50 to-teal-100/50">
                   <item.icon className="h-7 w-7 text-primary" />
                 </div>
                 <h3 className="mb-3 text-lg font-semibold text-slate-900">

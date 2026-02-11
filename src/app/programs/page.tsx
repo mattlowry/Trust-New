@@ -206,7 +206,7 @@ export default function ProgramsPage() {
 
       {/* 6. FAQ */}
       {pageFaqs.length > 0 && (
-        <Section variant="muted">
+        <Section variant="warm-neutral">
           <Container className="max-w-3xl">
             <H2 className="text-center mb-10">Frequently Asked Questions</H2>
             <FAQAccordion faqs={pageFaqs} />

@@ -30,7 +30,7 @@ function AccordionItem({ faq }: { faq: FAQItem }) {
       open={isOpen}
       onToggle={(e) => setIsOpen((e.target as HTMLDetailsElement).open)}
     >
-      <summary className="flex cursor-pointer list-none items-center justify-between py-4 text-left font-semibold text-foreground transition-colors hover:text-primary [&::-webkit-details-marker]:hidden">
+      <summary className="flex cursor-pointer list-none items-center justify-between py-4 text-left font-semibold text-slate-900 transition-colors hover:text-primary [&::-webkit-details-marker]:hidden">
         <span>{faq.question}</span>
         <span className="ml-4 flex-shrink-0 transition-transform duration-200">
           {isOpen ? (

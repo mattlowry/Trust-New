@@ -45,7 +45,7 @@ export function TestimonialCard({ quote, name, relation, rating }: TestimonialCa
       </blockquote>
 
       {/* Attribution */}
-      <div className="relative border-t border-slate-100 pt-4">
+      <div className="relative border-t-2 border-teal-100 pt-4">
         <p className="text-sm font-semibold text-slate-900">
           {name}
           <span className="mx-2 text-slate-300" aria-hidden="true">&mdash;</span>

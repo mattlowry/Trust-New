@@ -202,7 +202,7 @@ export default function AboutPage() {
             {differentiators.map((diff, index) => (
               <ScrollReveal key={diff.title} delay={index * 0.1} direction="up">
                 <div className="bg-slate-50 rounded-xl p-8 border border-slate-100 hover:shadow-lg hover:border-teal-100 transition-all group">
-                  <div className="inline-flex items-center justify-center h-14 w-14 rounded-xl bg-white text-primary shadow-sm mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                  <div className="inline-flex items-center justify-center h-14 w-14 rounded-xl bg-gradient-to-br from-white to-teal-50/50 text-primary shadow-sm mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                     <diff.icon className="h-7 w-7" />
                   </div>
                   <h3 className="text-xl font-bold text-slate-900 mb-3">{diff.title}</h3>
@@ -244,7 +244,7 @@ export default function AboutPage() {
       </Section>
 
       {/* FAQ Section */}
-      <Section variant="muted">
+      <Section variant="teal-mist">
         <Container>
           <div className="max-w-3xl mx-auto">
             <ScrollReveal>

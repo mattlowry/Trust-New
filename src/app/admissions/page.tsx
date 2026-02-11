@@ -269,7 +269,7 @@ export default function AdmissionsPage() {
                     key={item.label}
                     className="flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm"
                   >
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-teal-50">
+                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-teal-50 to-teal-100/50">
                       <item.icon className="h-5 w-5 text-primary" />
                     </div>
                     <span className="text-sm font-medium text-slate-700">
@@ -327,7 +327,7 @@ export default function AdmissionsPage() {
                   className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1"
                 >
                   <div className="mb-4 flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-teal-50">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-teal-50 to-teal-100/50">
                       <item.icon className="h-5 w-5 text-primary" />
                     </div>
                     <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">
@@ -414,7 +414,7 @@ export default function AdmissionsPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="mx-auto max-w-3xl">
             <div className="mb-12 text-center">
-              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-teal-50">
+              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-teal-50 to-teal-100/50">
                 <HelpCircle className="h-6 w-6 text-primary" />
               </div>
               <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">

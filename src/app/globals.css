@@ -50,9 +50,15 @@
   /* Primary Ring */
 
   --radius: 0.75rem;
+
+  /* Ultra-light brand tints */
+  --teal-25: #f0fdfa;
+  --orange-25: #fff8f3;
 }
 
 @theme inline {
+  --color-teal-25: var(--teal-25);
+  --color-orange-25: var(--orange-25);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
@@ -80,44 +86,6 @@
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f172a;
-    /* Slate 900 */
-    --foreground: #f8fafc;
-    /* Slate 50 */
-
-    --primary: #14b8a6;
-    /* Teal 500 */
-    --primary-foreground: #0f172a;
-
-    --secondary: #fb923c;
-    /* Orange 400 */
-    --secondary-foreground: #0f172a;
-
-    --accent: #0c4a6e;
-    /* Sky 900 */
-    --accent-foreground: #e0f2fe;
-    /* Sky 100 */
-
-    --muted: #1e293b;
-    /* Slate 800 */
-    --muted-foreground: #94a3b8;
-    /* Slate 400 */
-
-    --card: #1e293b;
-    --card-foreground: #f8fafc;
-
-    --popover: #1e293b;
-    --popover-foreground: #f8fafc;
-
-    --border: #334155;
-    /* Slate 700 */
-    --input: #334155;
-    --ring: #14b8a6;
-  }
-}
-
 body {
   background-color: var(--background);
   color: var(--foreground);
@@ -134,10 +102,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.dark .glass {
-  background: rgba(15, 23, 42, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
 
 /* Animations */
 @keyframes fadeIn {
@@ -166,4 +130,50 @@ body {
 
 .animate-delay-300 {
   animation-delay: 300ms;
+}
+
+/* Card Utilities */
+.card-elevated {
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 1rem;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.04),
+    0 1px 2px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+.card-elevated:hover {
+  box-shadow:
+    0 10px 25px -5px rgba(13, 148, 136, 0.08),
+    0 4px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.card-accent-top {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-accent-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, #0d9488, #14b8a6, #06b6d4);
+  border-radius: 3px 3px 0 0;
+}
+
+/* Text Gradient */
+.text-gradient-primary {
+  background: linear-gradient(135deg, #0d9488, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtle Glow */
+.glow-teal {
+  box-shadow: 0 0 20px rgba(13, 148, 136, 0.15);
 }

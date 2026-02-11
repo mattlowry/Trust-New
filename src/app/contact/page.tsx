@@ -75,7 +75,7 @@ export default function ContactPage() {
               <address className="not-italic space-y-6">
                 {/* Phone */}
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal-50">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-teal-50 to-teal-100/50">
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <div>
@@ -93,7 +93,7 @@ export default function ContactPage() {
 
                 {/* Email */}
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal-50">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-teal-50 to-teal-100/50">
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
@@ -109,7 +109,7 @@ export default function ContactPage() {
 
                 {/* Address */}
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal-50">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-teal-50 to-teal-100/50">
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
@@ -128,7 +128,7 @@ export default function ContactPage() {
 
                 {/* Hours */}
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal-50">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-teal-50 to-teal-100/50">
                     <Clock className="h-6 w-6 text-primary" />
                   </div>
                   <div>
@@ -259,7 +259,7 @@ export default function ContactPage() {
       {/* ----------------------------------------------------------------- */}
       {/* FAQ Section                                                        */}
       {/* ----------------------------------------------------------------- */}
-      <Section variant="muted">
+      <Section variant="warm-neutral">
         <Container className="max-w-3xl">
           <div className="mb-12 text-center">
             <H2>Frequently Asked Questions</H2>

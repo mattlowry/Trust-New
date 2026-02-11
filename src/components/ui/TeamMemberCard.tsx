@@ -22,7 +22,7 @@ export function TeamMemberCard({
     <div
       className={cn(
         'overflow-hidden rounded-2xl bg-white border border-slate-200 shadow-sm',
-        'transition-all duration-300 hover:shadow-lg'
+        'transition-all duration-300 hover:shadow-lg hover:border-teal-200'
       )}
     >
       {/* Image area */}
@@ -57,7 +57,7 @@ export function TeamMemberCard({
             {specialties.map((specialty) => (
               <span
                 key={specialty}
-                className="inline-block rounded-full bg-teal-50 px-2.5 py-0.5 text-xs font-medium text-teal-700"
+                className="inline-block rounded-full bg-teal-50 border border-teal-100 px-2.5 py-0.5 text-xs font-medium text-teal-700"
               >
                 {specialty}
               </span>

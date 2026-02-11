@@ -162,7 +162,7 @@ export default function InsurancePage() {
                 <div className="space-y-6">
                   {verificationSteps.map((step) => (
                     <div key={step.number} className="flex gap-4">
-                      <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-teal-50 text-lg font-bold text-primary">
+                      <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-teal-50 to-teal-100/50 text-lg font-bold text-primary">
                         {step.number}
                       </div>
                       <div>
@@ -235,7 +235,7 @@ export default function InsurancePage() {
                 key={item.title}
                 className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1"
               >
-                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-teal-50">
+                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-teal-50 to-teal-100/50">
                   <item.icon className="h-7 w-7 text-primary" />
                 </div>
                 <h3 className="mb-3 text-lg font-semibold text-slate-900">
@@ -319,7 +319,7 @@ export default function InsurancePage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="mx-auto max-w-3xl">
             <div className="mb-12 text-center">
-              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-teal-50">
+              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-teal-50 to-teal-100/50">
                 <HelpCircle className="h-6 w-6 text-primary" />
               </div>
               <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">

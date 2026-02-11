@@ -12,8 +12,8 @@ export function AddictionTypeCard({ name, slug, description }: AddictionTypeCard
     <Link
       href={`/addiction-types/${slug}`}
       className={cn(
-        'group block rounded-2xl border border-slate-200 border-l-4 border-l-teal-500 bg-white p-6 shadow-sm',
-        'transition-all duration-300 hover:shadow-lg hover:-translate-y-1'
+        'group block rounded-2xl border border-slate-100 border-l-4 border-l-teal-500 bg-white p-6 shadow-sm',
+        'transition-all duration-300 hover:shadow-lg hover:shadow-teal-500/5 hover:-translate-y-1'
       )}
     >
       {/* Addiction type name */}

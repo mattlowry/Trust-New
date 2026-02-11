@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 import { CheckCircle } from 'lucide-react';
 
 const inputStyles =
-  'w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition';
+  'w-full rounded-lg border border-slate-200 px-4 py-3 text-slate-900 placeholder:text-slate-400 hover:border-slate-300 focus:border-primary focus:ring-2 focus:ring-teal-500/10 outline-none transition';
 
 const labelStyles = 'block text-sm font-medium text-slate-700 mb-1';
 

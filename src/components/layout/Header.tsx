@@ -125,7 +125,7 @@ function MobileNavItem({
         return (
             <Link
                 href={item.href}
-                className="block text-base font-medium text-foreground py-3 border-b border-border/50"
+                className="block text-base font-medium text-slate-900 py-3 border-b border-slate-200/50"
                 onClick={onNavigate}
             >
                 {item.name}
@@ -135,18 +135,18 @@ function MobileNavItem({
 
     // Has children -- expandable section
     return (
-        <div className="border-b border-border/50">
+        <div className="border-b border-slate-200/50">
             <div className="flex items-center justify-between">
                 <Link
                     href={item.href}
-                    className="flex-1 text-base font-medium text-foreground py-3"
+                    className="flex-1 text-base font-medium text-slate-900 py-3"
                     onClick={onNavigate}
                 >
                     {item.name}
                 </Link>
                 <button
                     type="button"
-                    className="p-2 text-muted-foreground"
+                    className="p-2 text-slate-500"
                     onClick={() => setExpanded((prev) => !prev)}
                     aria-label={expanded ? `Collapse ${item.name}` : `Expand ${item.name}`}
                 >
@@ -170,7 +170,7 @@ function MobileNavItem({
                     <Link
                         key={child.href}
                         href={child.href}
-                        className="block pl-4 py-2 text-sm text-muted-foreground transition-colors hover:text-primary"
+                        className="block pl-4 py-2 text-sm text-slate-500 transition-colors hover:text-primary"
                         onClick={onNavigate}
                     >
                         {child.name}

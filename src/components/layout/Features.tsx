@@ -60,10 +60,10 @@ export function Features() {
         <Section variant="soft-secondary" className="py-24">
             <div className="container px-4 md:px-6 mx-auto">
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+                    <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
                         Comprehensive Treatment Programs
                     </h2>
-                    <p className="mt-4 text-lg text-slate-600 dark:text-slate-400">
+                    <p className="mt-4 text-lg text-slate-600">
                         We offer a full continuum of care tailored to meet your unique needs. Our evidence-based approach ensures you receive the right support at every stage of recovery.
                     </p>
                 </div>
@@ -72,7 +72,7 @@ export function Features() {
                     {features.map((feature) => (
                         <div
                             key={feature.name}
-                            className="relative group bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 dark:border-slate-700/50 overflow-hidden"
+                            className="relative group bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden"
                         >
                             <div className={`absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity ${feature.color}`}>
                                 <feature.icon className="h-24 w-24 transform translate-x-4 -translate-y-4" />
@@ -82,14 +82,14 @@ export function Features() {
                                 <feature.icon className="h-6 w-6" aria-hidden="true" />
                             </div>
 
-                            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">
+                            <h3 className="text-xl font-semibold text-slate-900 mb-3">
                                 <Link href={feature.href} className="focus:outline-none">
                                     <span className="absolute inset-0" aria-hidden="true" />
                                     {feature.name}
                                 </Link>
                             </h3>
 
-                            <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                            <p className="text-slate-600 leading-relaxed">
                                 {feature.description}
                             </p>
 

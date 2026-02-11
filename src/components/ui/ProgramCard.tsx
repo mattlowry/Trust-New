@@ -15,10 +15,13 @@ export function ProgramCard({ name, slug, tagline, icon, duration }: ProgramCard
     <Link
       href={`/programs/${slug}`}
       className={cn(
-        'group block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm',
-        'transition-all duration-300 hover:shadow-lg hover:-translate-y-1'
+        'group block rounded-2xl border border-slate-100 bg-white p-6 shadow-sm overflow-hidden relative',
+        'transition-all duration-300 hover:shadow-lg hover:shadow-teal-500/10 hover:-translate-y-1'
       )}
     >
+      {/* Teal gradient top bar */}
+      <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-teal-500 to-teal-400" />
+
       {/* Icon circle with first letter */}
       <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-teal-500 to-teal-700 text-xl font-bold text-white shadow-md">
         {name.charAt(0)}

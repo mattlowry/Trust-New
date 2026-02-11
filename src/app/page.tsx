@@ -109,7 +109,7 @@ export default function Home() {
       </Section>
 
       {/* Addiction Types Preview */}
-      <Section variant="soft-primary">
+      <Section variant="teal-mist">
         <Container>
           <ScrollReveal direction="up">
             <div className="text-center mb-14">
@@ -205,7 +205,7 @@ export default function Home() {
       </Section>
 
       {/* Local SEO Block */}
-      <Section variant="muted" className="relative overflow-hidden">
+      <Section variant="warm-neutral" className="relative overflow-hidden">
         <div className="absolute inset-y-0 right-0 w-full lg:w-1/2 bg-[url('/images/enhanced/scenic_coastline.png')] bg-cover bg-center opacity-20 lg:opacity-100 lg:mask-image-linear-to-l" style={{ maskImage: 'linear-gradient(to left, black 60%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to left, black 60%, transparent 100%)' }} />
 
         <Container className="relative z-10">
