@@ -201,7 +201,66 @@ export function generateServiceSchema(service: ServiceInput): JsonLd {
 }
 
 // ---------------------------------------------------------------------------
-// 6. WebSite (with SearchAction)
+// 6. BlogPosting (Article)
+// ---------------------------------------------------------------------------
+
+export interface ArticleInput {
+  title: string;
+  description: string;
+  image: string;
+  publishDate: string;
+  author: { name: string; credentials: string; title: string };
+  slug: string;
+  keyTakeaways: string[];
+  category: string;
+  tags: string[];
+  wordCount: number;
+  readingTime: number;
+}
+
+export function generateArticleSchema(article: ArticleInput): JsonLd {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: article.title,
+    description: article.description,
+    image: article.image,
+    datePublished: article.publishDate,
+    dateModified: article.publishDate,
+    author: {
+      '@type': 'Person',
+      name: article.author.name,
+      jobTitle: article.author.title,
+      affiliation: {
+        '@type': 'Organization',
+        name: SITE_CONFIG.name,
+        url: SITE_CONFIG.url,
+      },
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: SITE_CONFIG.name,
+      url: SITE_CONFIG.url,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_CONFIG.url}/logo.png`,
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${SITE_CONFIG.url}/blog/${article.slug}`,
+    },
+    url: `${SITE_CONFIG.url}/blog/${article.slug}`,
+    wordCount: article.wordCount,
+    timeRequired: `PT${article.readingTime}M`,
+    abstract: article.keyTakeaways.join(' '),
+    articleSection: article.category,
+    keywords: article.tags.join(', '),
+  };
+}
+
+// ---------------------------------------------------------------------------
+// 7. WebSite (with SearchAction)
 // ---------------------------------------------------------------------------
 
 export function generateWebSiteSchema(): JsonLd {

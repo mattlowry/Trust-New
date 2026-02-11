@@ -60,6 +60,10 @@ export const mainNavigation: NavItem[] = [
     href: '/insurance',
   },
   {
+    name: 'Blog',
+    href: '/blog',
+  },
+  {
     name: 'Admissions',
     href: '/admissions',
   },
@@ -91,6 +95,7 @@ export const footerCompany: { name: string; href: string }[] = [
   { name: 'Our Team', href: '/our-team' },
   { name: 'Careers', href: '/careers' },
   { name: 'Contact Us', href: '/contact' },
+  { name: 'Blog', href: '/blog' },
   { name: 'Privacy Policy', href: '/privacy-policy' },
   { name: 'Terms of Service', href: '/terms-of-service' },
 ];

@@ -1,5 +1,7 @@
 import type { MetadataRoute } from 'next';
 
+import { getAllBlogSlugs } from '@/data/blog';
+
 const BASE_URL = 'https://www.trustsocal.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -95,6 +97,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // -------------------------------------------------------------------------
+  // Blog Pages (priority 0.6 - 0.8)
+  // -------------------------------------------------------------------------
+  const blogListing: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE_URL}/blog`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+  ];
+
+  const blogPostPages = getAllBlogSlugs().map((slug) => ({
+    url: `${BASE_URL}/blog/${slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }));
+
+  // -------------------------------------------------------------------------
   // Legal / Utility Pages (priority 0.3)
   // -------------------------------------------------------------------------
   const legalPages = [
@@ -114,6 +135,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...programPages,
     ...addictionPages,
     ...locationPages,
+    ...blogListing,
+    ...blogPostPages,
     ...legalPages,
   ];
 }
