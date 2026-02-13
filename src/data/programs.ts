@@ -93,8 +93,7 @@ export const programs: Program[] = [
           'Most major insurance plans cover medical detox as a medically necessary service. Our admissions team will verify your benefits and explain your coverage before you arrive so there are no surprises. We also work with clients who are self-pay to develop manageable payment arrangements.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=1200',
+    heroImage: '/images/generated/program_medical_detox.png',
     metaTitle: 'Medical Detox Program in Orange County | Trust SoCal',
     metaDescription:
       'Safe, 24/7 medically supervised detox in Orange County. Our team uses evidence-based protocols to manage withdrawal and prepare you for lasting recovery.',
@@ -163,8 +162,7 @@ export const programs: Program[] = [
           'Residential treatment is a full-time commitment that requires stepping away from work and school. However, our team can help you communicate with employers or academic institutions about a medical leave of absence. Many clients find that investing this time leads to dramatically better outcomes in all areas of life.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200',
+    heroImage: '/images/generated/program_residential_treatment.png',
     metaTitle:
       'Residential Addiction Treatment in Orange County | Trust SoCal',
     metaDescription:
@@ -234,8 +232,7 @@ export const programs: Program[] = [
           'Absolutely. We strongly recommend ongoing psychiatric and therapeutic care after completing residential treatment. Our aftercare team will connect you with outpatient psychiatrists, therapists, and support groups in your area. Many clients step down to our PHP or IOP program for continued integrated treatment.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?w=1200',
+    heroImage: '/images/generated/program_dual_diagnosis.png',
     metaTitle:
       'Dual Diagnosis Treatment in Orange County | Trust SoCal',
     metaDescription:
@@ -310,8 +307,7 @@ export const programs: Program[] = [
           'Yes. Trauma-informed care is beneficial for a wide range of conditions that often accompany unresolved trauma, including depression, anxiety, chronic pain, disordered eating, and relationship difficulties. The skills and insights gained through trauma therapy often have positive ripple effects across many areas of a client\'s life.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=1200',
+    heroImage: '/images/generated/program_trauma.png',
     metaTitle:
       'Trauma-Informed Addiction Treatment in Orange County | Trust SoCal',
     metaDescription:
@@ -381,8 +377,7 @@ export const programs: Program[] = [
           'Yes. We offer dedicated support for spouses and partners, including individual sessions and specialized groups that address the unique challenges of being in a relationship with someone in recovery. Topics include rebuilding trust, managing expectations, processing betrayal, and nurturing a healthy partnership in sobriety.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1200',
+    heroImage: '/images/generated/program_family_therapy.png',
     metaTitle:
       'Family Therapy for Addiction Recovery in Orange County | Trust SoCal',
     metaDescription:
@@ -452,8 +447,7 @@ export const programs: Program[] = [
           'Absolutely. If an alumni member is experiencing difficulties or feels at risk of relapse, they can contact our alumni coordinator or clinical team directly. We can arrange individual counseling sessions, connect them with outpatient services, or facilitate a return to a higher level of care if clinically appropriate. We are always here for our graduates.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200',
+    heroImage: '/images/generated/program_aftercare.png',
     metaTitle:
       'Aftercare & Alumni Recovery Program in Orange County | Trust SoCal',
     metaDescription:
@@ -528,8 +522,7 @@ export const programs: Program[] = [
           'If your clinical team determines that you need more intensive support, we can seamlessly transition you to our PHP or residential program. This flexibility is one of the benefits of receiving care within a comprehensive treatment center that offers multiple levels of care under one organizational umbrella.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=1200',
+    heroImage: '/images/generated/program_iop.png',
     metaTitle:
       'Intensive Outpatient Program (IOP) in Orange County | Trust SoCal',
     metaDescription:
@@ -599,8 +592,7 @@ export const programs: Program[] = [
           'On weekends, we encourage clients to attend community recovery meetings such as AA or NA, engage in sober recreational activities, rest, and practice the skills learned during the week. Your treatment team will help you develop a weekend plan that supports your recovery and minimizes unstructured time during early sobriety.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200',
+    heroImage: '/images/generated/program_php.png',
     metaTitle:
       'Partial Hospitalization Program (PHP) in Orange County | Trust SoCal',
     metaDescription:

@@ -168,8 +168,13 @@ export default function AboutPage() {
                   </Paragraph>
                   <div className="mt-6 flex items-center gap-4">
                     <div className="h-12 w-12 bg-slate-200 rounded-full overflow-hidden relative">
-                      {/* Placeholder for founder image */}
-                      <div className="absolute inset-0 bg-teal-500 flex items-center justify-center text-white font-bold">T</div>
+                      {/* Founder/Leadership Image */}
+                      <Image
+                        src="/images/generated/team_leadership.png"
+                        alt="Trust SoCal Leadership"
+                        fill
+                        className="object-cover"
+                      />
                     </div>
                     <div>
                       <p className="font-bold text-slate-900">Leadership Team</p>
