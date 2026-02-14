@@ -22,8 +22,7 @@ export const aftercareRelapsePreventionPosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-06-05T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200',
+    heroImage: '/images/blog/relapse-prevention-strategies.jpg',
     excerpt:
       'Relapse prevention strategies are the cornerstone of lasting sobriety. Learn 15 evidence-based techniques trusted by addiction treatment professionals in Southern California to help you stay on track after rehab.',
     readingTime: 10,
@@ -210,8 +209,7 @@ export const aftercareRelapsePreventionPosts: BlogPost[] = [
     ],
     author: AUTHORS.davidReeves,
     publishDate: '2025-06-18T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=1200',
+    heroImage: '/images/blog/life-after-rehab-first-90-days.jpg',
     excerpt:
       'Life after rehab can feel overwhelming, but the first 90 days set the foundation for lasting recovery. This guide walks you through week-by-week priorities, from building routines to finding community support in Southern California.',
     readingTime: 9,
@@ -377,8 +375,7 @@ export const aftercareRelapsePreventionPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-07-02T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200',
+    heroImage: '/images/blog/sober-living-complete-guide.jpg',
     excerpt:
       'Sober living houses provide a structured, substance-free environment that bridges the gap between rehab and independent life. This complete guide covers how sober living works, what to expect, costs, and tips for finding the right home in Orange County.',
     readingTime: 9,
@@ -547,8 +544,7 @@ export const aftercareRelapsePreventionPosts: BlogPost[] = [
     ],
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-07-15T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?w=1200',
+    heroImage: '/images/blog/warning-signs-of-relapse.jpg',
     excerpt:
       'Recognizing the warning signs of relapse before substance use occurs is one of the most valuable skills in recovery. This guide breaks down the three stages of relapse and provides actionable steps to intervene at each phase.',
     readingTime: 8,
@@ -724,8 +720,7 @@ export const aftercareRelapsePreventionPosts: BlogPost[] = [
     ],
     author: AUTHORS.robertKim,
     publishDate: '2025-07-28T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200',
+    heroImage: '/images/blog/building-support-network-recovery.jpg',
     excerpt:
       'Building a strong support network in recovery is one of the most powerful predictors of long-term sobriety. This guide covers practical strategies for finding sponsors, cultivating sober friendships, and engaging with the recovery community in Orange County.',
     readingTime: 8,
@@ -883,8 +878,7 @@ export const aftercareRelapsePreventionPosts: BlogPost[] = [
     ],
     author: AUTHORS.davidReeves,
     publishDate: '2025-08-08T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=1200',
+    heroImage: '/images/blog/understanding-12-step-program-guide.jpg',
     excerpt:
       'The 12-step program has helped millions of people achieve lasting sobriety. This beginner guide explains what the steps involve, how meetings work, common misconceptions, and how to find the right 12-step community in Orange County.',
     readingTime: 10,
@@ -1049,8 +1043,7 @@ export const aftercareRelapsePreventionPosts: BlogPost[] = [
     ],
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-08-22T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1532012197267-da84d127e765?w=1200',
+    heroImage: '/images/blog/smart-recovery-science-based-alternative.jpg',
     excerpt:
       'SMART Recovery offers a science-based alternative to traditional 12-step programs, using cognitive behavioral therapy tools and a four-point framework. Learn how SMART Recovery works and where to find meetings in Southern California.',
     readingTime: 8,
@@ -1199,8 +1192,7 @@ export const aftercareRelapsePreventionPosts: BlogPost[] = [
     ],
     author: AUTHORS.drNavarro,
     publishDate: '2025-09-05T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?w=1200',
+    heroImage: '/images/blog/recovery-milestones-first-year.jpg',
     excerpt:
       'Your first year of recovery brings dramatic physical, emotional, and social changes. This month-by-month guide to recovery milestones helps you understand what to expect and celebrate your progress along the way.',
     readingTime: 11,
@@ -1367,8 +1359,7 @@ export const aftercareRelapsePreventionPosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-09-20T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200',
+    heroImage: '/images/blog/importance-alumni-programs-addiction-treatment.jpg',
     excerpt:
       'Alumni programs extend the therapeutic relationship beyond discharge and provide structured community support that reduces relapse risk. Learn why the best addiction treatment centers in Orange County make alumni programs a priority.',
     readingTime: 7,
@@ -1510,8 +1501,7 @@ export const aftercareRelapsePreventionPosts: BlogPost[] = [
     ],
     author: AUTHORS.robertKim,
     publishDate: '2025-11-10T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1512389142860-9c449e58a814?w=1200',
+    heroImage: '/images/blog/maintain-sobriety-during-holidays.jpg',
     excerpt:
       'The holiday season brings unique challenges for people in recovery. Learn how to maintain sobriety during the holidays with practical strategies for managing family stress, navigating social events, and building new sober traditions in Southern California.',
     readingTime: 8,

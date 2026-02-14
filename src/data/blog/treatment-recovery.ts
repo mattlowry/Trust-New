@@ -20,7 +20,7 @@ export const treatmentRecoveryPosts: BlogPost[] = [
     author: AUTHORS.christinaMorales,
     publishDate: '2025-01-08',
     heroImage:
-      'https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?w=1200',
+      '/images/blog/what-to-expect-first-week-of-rehab.png',
     excerpt:
       'The first week of rehab can feel overwhelming, but knowing what to expect makes the transition smoother. This guide walks you through every step of your first week of rehab, from intake and medical assessment to your first therapy sessions at a Southern California treatment center.',
     readingTime: 9,
@@ -180,7 +180,7 @@ export const treatmentRecoveryPosts: BlogPost[] = [
     author: AUTHORS.sarahEllison,
     publishDate: '2025-01-22',
     heroImage:
-      'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200',
+      '/images/blog/how-to-choose-right-rehab-center.png',
     excerpt:
       'Choosing the right rehab center is one of the most important decisions you will make in your recovery journey. This comprehensive guide covers how to choose the right rehab center by evaluating credentials, treatment approaches, staff qualifications, and location factors in Southern California.',
     readingTime: 10,
@@ -342,7 +342,7 @@ export const treatmentRecoveryPosts: BlogPost[] = [
     author: AUTHORS.drNavarro,
     publishDate: '2025-02-05',
     heroImage:
-      'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1200',
+      '/images/blog/medical-detox-complete-guide.png',
     excerpt:
       'Medical detox is the critical first step in addiction treatment, ensuring safe withdrawal under professional supervision. This complete guide to medical detox covers what to expect, which substances require supervised detox, medication protocols, and how detox transitions into comprehensive treatment at facilities throughout Southern California.',
     readingTime: 11,
@@ -522,8 +522,7 @@ export const treatmentRecoveryPosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-02-19',
-    heroImage:
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200',
+    heroImage: '/images/blog/residential-vs-outpatient-treatment.png',
     excerpt:
       'Deciding between residential vs. outpatient treatment is one of the most common questions people face when entering addiction recovery. This guide compares both levels of care, including daily structure, cost, clinical intensity, and outcomes, to help you make an informed choice about treatment in Southern California.',
     readingTime: 10,
@@ -673,7 +672,7 @@ export const treatmentRecoveryPosts: BlogPost[] = [
     author: AUTHORS.davidReeves,
     publishDate: '2025-03-05',
     heroImage:
-      'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=1200',
+      '/images/blog/evidence-based-therapies-addiction-treatment.png',
     excerpt:
       'Evidence-based therapies form the foundation of effective addiction treatment, providing proven methods for addressing the root causes of substance use disorders. This guide explains the most widely used evidence-based therapies in addiction treatment, from cognitive-behavioral therapy to EMDR, and how they are applied at leading Southern California rehab centers.',
     readingTime: 11,
@@ -834,7 +833,7 @@ export const treatmentRecoveryPosts: BlogPost[] = [
     author: AUTHORS.drNavarro,
     publishDate: '2025-03-19',
     heroImage:
-      'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=1200',
+      '/images/blog/medication-assisted-treatment-mat-guide.png',
     excerpt:
       'Medication-assisted treatment (MAT) combines FDA-approved medications with behavioral therapy to treat substance use disorders effectively. This guide explains how medication-assisted treatment works, which medications are used for opioid and alcohol addiction, and why MAT is considered the gold standard of care at treatment centers across Southern California.',
     readingTime: 10,
@@ -987,7 +986,7 @@ export const treatmentRecoveryPosts: BlogPost[] = [
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-04-02',
     heroImage:
-      'https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=1200',
+      '/images/blog/what-is-partial-hospitalization-program-php.png',
     excerpt:
       'A partial hospitalization program (PHP) provides intensive, structured treatment during the day while allowing clients to return home or to sober living in the evening. This guide explains what a partial hospitalization program involves, who it benefits most, and how it fits into the recovery continuum at treatment centers in Southern California.',
     readingTime: 9,
@@ -1145,7 +1144,7 @@ export const treatmentRecoveryPosts: BlogPost[] = [
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-04-16',
     heroImage:
-      'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200',
+      '/images/blog/complete-guide-intensive-outpatient-programs-iop.png',
     excerpt:
       'Intensive outpatient programs (IOP) offer structured addiction treatment that fits around work, school, and family commitments. This complete guide to intensive outpatient programs explains what IOP involves, who benefits most, and how this level of care supports long-term recovery at facilities across Southern California.',
     readingTime: 9,
@@ -1302,7 +1301,7 @@ export const treatmentRecoveryPosts: BlogPost[] = [
     author: AUTHORS.christinaMorales,
     publishDate: '2025-05-07',
     heroImage:
-      'https://images.unsplash.com/photo-1506784365847-bbad939e9335?w=1200',
+      '/images/blog/how-to-prepare-for-residential-treatment.png',
     excerpt:
       'Preparing for residential addiction treatment involves practical, emotional, and logistical planning that can feel overwhelming. This guide covers everything you need to know to prepare for residential treatment, from what to pack and how to handle work obligations to setting expectations for the experience ahead at facilities in Southern California.',
     readingTime: 8,
@@ -1475,7 +1474,7 @@ export const treatmentRecoveryPosts: BlogPost[] = [
     author: AUTHORS.robertKim,
     publishDate: '2025-06-04',
     heroImage:
-      'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200',
+      '/images/blog/continuum-of-care-addiction-recovery.png',
     excerpt:
       'The continuum of care in addiction recovery is a structured progression through multiple levels of treatment intensity, from medical detox through aftercare. Understanding how the continuum of care works helps individuals and families navigate the treatment journey and build a foundation for lasting recovery at Southern California treatment centers.',
     readingTime: 12,

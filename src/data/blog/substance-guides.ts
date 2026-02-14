@@ -18,8 +18,7 @@ export const substanceGuidesPosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-01-08',
-    heroImage:
-      'https://images.unsplash.com/photo-1569924256915-93dedf600354?w=1200',
+    heroImage: '/images/blog/warning-signs-alcohol-addiction.jpg',
     excerpt:
       'Alcohol addiction often develops gradually, making the warning signs easy to dismiss. Learn the 10 critical indicators of alcohol use disorder and how Trust SoCal in Orange County can help you or a loved one find lasting recovery.',
     readingTime: 9,
@@ -212,8 +211,7 @@ export const substanceGuidesPosts: BlogPost[] = [
     ],
     author: AUTHORS.drNavarro,
     publishDate: '2025-01-22',
-    heroImage:
-      'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200',
+    heroImage: '/images/blog/fentanyl-crisis-what-families-need-to-know.jpg',
     excerpt:
       'The fentanyl crisis has transformed the landscape of drug addiction, making overdose deaths more common than ever. Learn what every family in Southern California needs to know about fentanyl, including detection, risk factors, and how to save a life with naloxone.',
     readingTime: 10,
@@ -388,8 +386,7 @@ export const substanceGuidesPosts: BlogPost[] = [
     ],
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-02-05',
-    heroImage:
-      'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200',
+    heroImage: '/images/blog/prescription-drug-abuse-hidden-epidemic.jpg',
     excerpt:
       'Prescription drug abuse affects nearly 18 million Americans annually, often hiding behind the false sense of safety that comes with doctor-prescribed medications. Discover the warning signs, health risks, and evidence-based treatment options available in Southern California.',
     readingTime: 8,
@@ -555,8 +552,7 @@ export const substanceGuidesPosts: BlogPost[] = [
     ],
     author: AUTHORS.davidReeves,
     publishDate: '2025-02-19',
-    heroImage:
-      'https://images.unsplash.com/photo-1527613426441-4da17471b66d?w=1200',
+    heroImage: '/images/blog/methamphetamine-addiction-effects-treatment.jpg',
     excerpt:
       'Methamphetamine addiction causes severe physical, cognitive, and psychological damage that intensifies over time. Learn about the long-term effects of meth use and the evidence-based treatment options available at Trust SoCal in Southern California.',
     readingTime: 9,
@@ -728,8 +724,7 @@ export const substanceGuidesPosts: BlogPost[] = [
     ],
     author: AUTHORS.drNavarro,
     publishDate: '2025-03-06',
-    heroImage:
-      'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1200',
+    heroImage: '/images/blog/heroin-addiction-recovery-timeline.jpg',
     excerpt:
       'Recovery from heroin addiction is a journey with distinct phases, each bringing its own challenges and milestones. This realistic heroin addiction recovery timeline helps individuals and families in Southern California understand what to expect from detox through long-term sobriety.',
     readingTime: 10,
@@ -891,8 +886,7 @@ export const substanceGuidesPosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-03-20',
-    heroImage:
-      'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=1200',
+    heroImage: '/images/blog/cocaine-addiction-signs-getting-help.jpg',
     excerpt:
       'Cocaine addiction often hides behind a veneer of social success and recreational use. Learn the signs that cocaine use has become an addiction and discover the evidence-based treatment options available at Trust SoCal in Southern California.',
     readingTime: 8,
@@ -1054,8 +1048,7 @@ export const substanceGuidesPosts: BlogPost[] = [
     ],
     author: AUTHORS.drNavarro,
     publishDate: '2025-04-03',
-    heroImage:
-      'https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=1200',
+    heroImage: '/images/blog/benzodiazepine-withdrawal-medical-detox.jpg',
     excerpt:
       'Benzodiazepine withdrawal is one of the most medically dangerous forms of drug withdrawal, with risks including seizures, psychosis, and death. Discover why medical detox under professional supervision is not optional but essential for safe benzodiazepine discontinuation.',
     readingTime: 9,
@@ -1221,8 +1214,7 @@ export const substanceGuidesPosts: BlogPost[] = [
     ],
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-04-17',
-    heroImage:
-      'https://images.unsplash.com/photo-1616690002178-a37e08ee4779?w=1200',
+    heroImage: '/images/blog/is-marijuana-addictive-real-risks.jpg',
     excerpt:
       'As marijuana legalization expands and THC potency increases, the question of whether marijuana is addictive has become more relevant than ever. Learn about the real risks of cannabis use disorder, who is most vulnerable, and what treatment looks like in Southern California.',
     readingTime: 8,
@@ -1393,8 +1385,7 @@ export const substanceGuidesPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-05-08',
-    heroImage:
-      'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1200',
+    heroImage: '/images/blog/opioid-epidemic-southern-california.jpg',
     excerpt:
       'The opioid epidemic in Southern California continues to claim lives at an alarming rate, with fentanyl accelerating the crisis. This comprehensive guide covers local statistics, available resources, and treatment pathways for individuals and families across Orange County, Los Angeles, and the Inland Empire.',
     readingTime: 11,
@@ -1568,8 +1559,7 @@ export const substanceGuidesPosts: BlogPost[] = [
     ],
     author: AUTHORS.robertKim,
     publishDate: '2025-06-05',
-    heroImage:
-      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200',
+    heroImage: '/images/blog/polysubstance-abuse-treating-multiple-addictions.jpg',
     excerpt:
       'Polysubstance abuse, the use of multiple addictive substances simultaneously or sequentially, presents unique treatment challenges that require integrated clinical approaches. Learn how Trust SoCal in Southern California addresses the complexities of treating addiction to multiple substances.',
     readingTime: 10,

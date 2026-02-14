@@ -26,8 +26,7 @@ export const wellnessLifestylePosts: BlogPost[] = [
     ],
     author: AUTHORS.drNavarro,
     publishDate: '2025-07-08T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1200',
+    heroImage: '/images/blog/exercise-supports-addiction-recovery.jpg',
     excerpt:
       'Exercise supports addiction recovery by naturally restoring dopamine levels, reducing cravings, and improving both physical and mental health. Learn how to build a sustainable fitness routine in sobriety.',
     readingTime: 9,
@@ -204,8 +203,7 @@ export const wellnessLifestylePosts: BlogPost[] = [
     ],
     author: AUTHORS.drNavarro,
     publishDate: '2025-07-22T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1200',
+    heroImage: '/images/blog/nutrition-recovery-healing-body.jpg',
     excerpt:
       'Nutrition in recovery plays a critical role in healing the body from substance abuse. Learn which foods restore brain chemistry, repair organ damage, and reduce cravings during addiction treatment.',
     readingTime: 10,
@@ -390,8 +388,7 @@ export const wellnessLifestylePosts: BlogPost[] = [
     ],
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-08-05T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200',
+    heroImage: '/images/blog/mindfulness-meditation-recovery.jpg',
     excerpt:
       'Mindfulness and meditation techniques offer powerful support for people in recovery from addiction. Discover practical practices that reduce cravings, calm anxiety, and strengthen the mental resilience needed for lasting sobriety.',
     readingTime: 10,
@@ -568,8 +565,7 @@ export const wellnessLifestylePosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-08-19T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1531353826977-0941b4779a1c?w=1200',
+    heroImage: '/images/blog/sleep-hygiene-recovery-guide.jpg',
     excerpt:
       'Sleep hygiene in recovery is essential for healing the brain and body after substance abuse. This guide covers practical, science-backed strategies to overcome insomnia, restore your circadian rhythm, and build restful sleep habits that support lasting sobriety.',
     readingTime: 9,
@@ -753,8 +749,7 @@ export const wellnessLifestylePosts: BlogPost[] = [
     ],
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-09-02T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1200',
+    heroImage: '/images/blog/yoga-therapy-substance-abuse.jpg',
     excerpt:
       'Yoga therapy for substance abuse combines physical postures, breathwork, and mindfulness to address the root causes of addiction. Discover how this evidence-based practice reduces cravings, heals trauma, and builds the body awareness essential for lasting recovery.',
     readingTime: 10,
@@ -932,8 +927,7 @@ export const wellnessLifestylePosts: BlogPost[] = [
     ],
     author: AUTHORS.davidReeves,
     publishDate: '2025-09-16T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1517842645767-c639042777db?w=1200',
+    heroImage: '/images/blog/journaling-addiction-recovery.jpg',
     excerpt:
       'Journaling in addiction recovery is a simple yet powerful tool for processing emotions, identifying triggers, and tracking personal growth. Learn evidence-based writing techniques that strengthen sobriety and support lasting transformation.',
     readingTime: 8,
@@ -1109,8 +1103,7 @@ export const wellnessLifestylePosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-10-07T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=1200',
+    heroImage: '/images/blog/healthy-stress-management-without-substances.jpg',
     excerpt:
       'Healthy stress management without substances is one of the most important skills in addiction recovery. This guide covers proven coping strategies, relaxation techniques, and lifestyle adjustments that help you handle life\'s pressures while maintaining sobriety.',
     readingTime: 9,
@@ -1293,8 +1286,7 @@ export const wellnessLifestylePosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-10-21T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1200',
+    heroImage: '/images/blog/rebuilding-career-after-addiction.jpg',
     excerpt:
       'Rebuilding your career after addiction treatment can feel daunting, but it is absolutely achievable. This guide provides practical strategies for job searching, addressing resume gaps, knowing your workplace rights, and building a fulfilling professional life in recovery.',
     readingTime: 9,
@@ -1471,8 +1463,7 @@ export const wellnessLifestylePosts: BlogPost[] = [
     ],
     author: AUTHORS.robertKim,
     publishDate: '2025-11-04T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1502139214982-d0ad755818d8?w=1200',
+    heroImage: '/images/blog/finding-purpose-meaning-recovery.jpg',
     excerpt:
       'Finding purpose and meaning in recovery is one of the most powerful predictors of sustained sobriety. Learn how to discover what drives you, set meaningful goals, and build a life so fulfilling that returning to substance use becomes unthinkable.',
     readingTime: 10,
@@ -1644,8 +1635,7 @@ export const wellnessLifestylePosts: BlogPost[] = [
     ],
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-12-02T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1200',
+    heroImage: '/images/blog/art-music-therapy-addiction-treatment.jpg',
     excerpt:
       'Art and music therapy in addiction treatment offer powerful pathways for processing trauma, expressing difficult emotions, and developing healthy coping skills. Discover how these evidence-based creative therapies complement traditional treatment approaches.',
     readingTime: 11,

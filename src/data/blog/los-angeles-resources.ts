@@ -27,8 +27,7 @@ export const losAngelesResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.drNavarro,
     publishDate: '2025-03-05T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1534190239940-9ba8944ea261?w=1200',
+    heroImage: '/images/blog/drug-rehab-los-angeles-county-guide.jpg',
     excerpt:
       'Drug rehab in Los Angeles County offers a wide range of programs from medical detox to long-term residential care. This guide covers the key options, what to expect, and how to choose the right level of care for your recovery journey.',
     readingTime: 10,
@@ -231,8 +230,7 @@ export const losAngelesResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-03-18T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200',
+    heroImage: '/images/blog/sober-living-los-angeles.jpg',
     excerpt:
       'Sober living in Los Angeles provides a structured, substance-free environment for individuals transitioning from rehab back to everyday life. This guide explains how sober living homes work, what they cost, and how to choose the right one across LA County neighborhoods.',
     readingTime: 9,
@@ -401,8 +399,7 @@ export const losAngelesResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.davidReeves,
     publishDate: '2025-04-02T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200',
+    heroImage: '/images/blog/addiction-treatment-near-long-beach.jpg',
     excerpt:
       'Addiction treatment near Long Beach, California encompasses programs within the city itself and in nearby communities across Los Angeles and Orange counties. This guide reviews local resources, treatment levels, and why many Long Beach residents look south to Orange County for care.',
     readingTime: 9,
@@ -574,8 +571,7 @@ export const losAngelesResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-04-15T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200',
+    heroImage: '/images/blog/recovery-support-pasadena-area.jpg',
     excerpt:
       'Recovery support in the Pasadena area includes community meetings, outpatient programs, sober social groups, and connections to residential treatment across Southern California. This guide covers the resources available to individuals and families in Pasadena and the greater San Gabriel Valley.',
     readingTime: 8,
@@ -735,8 +731,7 @@ export const losAngelesResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-05-01T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1509914398892-963f53e6e2f1?w=1200',
+    heroImage: '/images/blog/substance-abuse-resources-torrance-south-bay.jpg',
     excerpt:
       'Substance abuse resources in Torrance and the South Bay include local treatment programs, community support groups, and easy access to residential facilities in neighboring Orange County. This guide helps South Bay residents navigate their recovery options.',
     readingTime: 8,

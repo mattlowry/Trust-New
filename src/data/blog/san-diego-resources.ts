@@ -26,8 +26,7 @@ export const sanDiegoResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.drNavarro,
     publishDate: '2025-04-08',
-    heroImage:
-      'https://images.unsplash.com/photo-1538097304804-2a1b932466a9?w=1200',
+    heroImage: '/images/blog/drug-rehab-san-diego-county-guide.jpg',
     excerpt:
       'Drug rehab in San Diego County offers a range of programs from medical detox to long-term residential care. This guide walks you through every level of care available across the region and explains how to select a facility that fits your clinical and personal needs.',
     readingTime: 10,
@@ -205,8 +204,7 @@ export const sanDiegoResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.davidReeves,
     publishDate: '2025-04-22',
-    heroImage:
-      'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200',
+    heroImage: '/images/blog/sober-living-san-diego-county.jpg',
     excerpt:
       'Sober living in San Diego County provides structured, substance-free housing for individuals transitioning from treatment to independent living. This guide covers what to expect, how to choose the right home, average costs, and the role transitional housing plays in maintaining long-term sobriety.',
     readingTime: 9,
@@ -387,8 +385,7 @@ export const sanDiegoResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-05-06',
-    heroImage:
-      'https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=1200',
+    heroImage: '/images/blog/addiction-treatment-resources-chula-vista.jpg',
     excerpt:
       'Addiction treatment resources near Chula Vista, CA, include outpatient clinics, residential programs, medication-assisted treatment providers, and community support groups serving the South Bay region of San Diego County. This guide helps Chula Vista residents navigate local options and find the right level of care.',
     readingTime: 8,
@@ -544,8 +541,7 @@ export const sanDiegoResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-05-20',
-    heroImage:
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200',
+    heroImage: '/images/blog/recovery-community-north-county-san-diego.jpg',
     excerpt:
       'The recovery community in North County San Diego offers a robust network of support groups, sober activities, treatment providers, and peer organizations across Oceanside, Carlsbad, Encinitas, Vista, and Escondido. Discover how this region supports lasting recovery through connection and community.',
     readingTime: 9,
@@ -706,8 +702,7 @@ export const sanDiegoResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.drNavarro,
     publishDate: '2025-06-03',
-    heroImage:
-      'https://images.unsplash.com/photo-1579208575657-c595a05383b7?w=1200',
+    heroImage: '/images/blog/veterans-addiction-treatment-san-diego.jpg',
     excerpt:
       'Veterans addiction treatment in San Diego leverages the region\'s strong military presence, VA healthcare system, and specialized private programs to address the unique intersection of combat trauma, service-related stress, and substance use disorders affecting those who served.',
     readingTime: 10,

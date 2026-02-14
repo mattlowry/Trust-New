@@ -22,8 +22,7 @@ export const orangeCountyResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.drNavarro,
     publishDate: '2025-02-10T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1527525443983-6e60c75fff46?w=1200',
+    heroImage: '/images/blog/drug-rehab-orange-county-guide.jpg',
     excerpt:
       'Drug rehab in Orange County offers world-class treatment surrounded by ideal recovery conditions. This complete guide walks you through every option available in the region, from medical detox to long-term aftercare programs.',
     readingTime: 10,
@@ -204,8 +203,7 @@ export const orangeCountyResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-02-24T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200',
+    heroImage: '/images/blog/sober-living-orange-county.jpg',
     excerpt:
       'Sober living in Orange County provides a structured, supportive environment for people transitioning out of rehab. This guide covers everything from costs and rules to the best neighborhoods for recovery housing in the region.',
     readingTime: 9,
@@ -370,8 +368,7 @@ export const orangeCountyResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.davidReeves,
     publishDate: '2025-03-10T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200',
+    heroImage: '/images/blog/aa-na-meetings-orange-county.jpg',
     excerpt:
       'Finding AA and NA meetings in Orange County is easier than you might think. This local guide covers meeting types, popular locations from Anaheim to Laguna Beach, online options, and tips for attending your first meeting.',
     readingTime: 8,
@@ -538,8 +535,7 @@ export const orangeCountyResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.drNavarro,
     publishDate: '2025-03-24T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200',
+    heroImage: '/images/blog/opioid-crisis-orange-county-resources.jpg',
     excerpt:
       'The opioid crisis in Orange County continues to claim lives at an alarming rate. This guide outlines local resources including treatment programs, Narcan distribution points, harm reduction services, and how families can access help.',
     readingTime: 10,
@@ -705,8 +701,7 @@ export const orangeCountyResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-04-07T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=1200',
+    heroImage: '/images/blog/mental-health-services-orange-county-recovery.jpg',
     excerpt:
       'Mental health services in Orange County play a critical role in addiction recovery. This guide covers dual diagnosis treatment, therapy options, crisis resources, and how to find affordable mental health care while maintaining sobriety.',
     readingTime: 9,

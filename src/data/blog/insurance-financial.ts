@@ -22,8 +22,7 @@ export const insuranceFinancialPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-05-12T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200',
+    heroImage: '/images/blog/does-insurance-cover-rehab.jpg',
     excerpt:
       'Does insurance cover rehab for addiction? In most cases, yes. Federal and California state laws require health insurers to cover substance abuse treatment. This complete guide explains your rights, what plans typically cover, and how to get the most from your benefits in Southern California.',
     readingTime: 10,
@@ -211,8 +210,7 @@ export const insuranceFinancialPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-05-28T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200',
+    heroImage: '/images/blog/how-to-verify-insurance-addiction-treatment.jpg',
     excerpt:
       'Verifying your insurance for addiction treatment is an essential first step before entering rehab. This guide walks you through the entire process, from gathering your policy information to understanding your benefits breakdown, so you can focus on recovery in Southern California.',
     readingTime: 9,
@@ -407,8 +405,7 @@ export const insuranceFinancialPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-06-09T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1563986768609-322da13575f2?w=1200',
+    heroImage: '/images/blog/ppo-vs-hmo-addiction-treatment.jpg',
     excerpt:
       'Choosing between PPO and HMO plans for addiction treatment affects your provider options, costs, and access to care. This guide compares both plan types and explains how each works for substance abuse treatment in Southern California and Orange County.',
     readingTime: 9,
@@ -579,8 +576,7 @@ export const insuranceFinancialPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-06-23T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=1200',
+    heroImage: '/images/blog/medi-cal-addiction-treatment-california.jpg',
     excerpt:
       'Medi-Cal provides comprehensive addiction treatment coverage to eligible California residents at little to no cost. This guide explains Medi-Cal eligibility, covered services, and how to access substance abuse treatment through the program in Orange County and across Southern California.',
     readingTime: 10,
@@ -761,8 +757,7 @@ export const insuranceFinancialPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-07-07T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1554224154-22dec7ec8818?w=1200',
+    heroImage: '/images/blog/out-of-network-rehab-benefits.jpg',
     excerpt:
       'When your preferred rehab center is out of network, understanding your out-of-network benefits can save thousands of dollars. Learn how out-of-network coverage works, strategies for reducing costs, and how to negotiate single-case agreements in Southern California.',
     readingTime: 8,
@@ -925,8 +920,7 @@ export const insuranceFinancialPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-07-21T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200',
+    heroImage: '/images/blog/how-to-pay-for-rehab-without-insurance.jpg',
     excerpt:
       'Not having insurance should never prevent you from getting addiction treatment. This guide covers practical options for paying for rehab without insurance, including state-funded programs, sliding scale fees, scholarships, and financing options available in Southern California.',
     readingTime: 9,
@@ -1116,8 +1110,7 @@ export const insuranceFinancialPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-08-04T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200',
+    heroImage: '/images/blog/parity-act-mental-health-addiction-coverage.jpg',
     excerpt:
       'The Mental Health Parity and Addiction Equity Act protects your right to equal insurance coverage for addiction treatment. Learn how this federal law works, how California strengthens these protections, and what to do when insurers violate your parity rights.',
     readingTime: 10,
@@ -1297,8 +1290,7 @@ export const insuranceFinancialPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-08-25T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200',
+    heroImage: '/images/blog/blue-cross-blue-shield-rehab-coverage.jpg',
     excerpt:
       'Blue Cross Blue Shield is one of the largest insurance providers in the United States and covers addiction treatment under most plans. Learn what BCBS covers for rehab, how to verify your benefits, and strategies for maximizing your coverage in Southern California.',
     readingTime: 8,
@@ -1478,8 +1470,7 @@ export const insuranceFinancialPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-09-15T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200',
+    heroImage: '/images/blog/aetna-coverage-addiction-treatment.jpg',
     excerpt:
       'Aetna provides coverage for addiction treatment across multiple levels of care. This guide explains what Aetna plans cover for drug and alcohol rehab, how to verify your benefits, and tips for maximizing your coverage at treatment centers in Orange County and Southern California.',
     readingTime: 8,
@@ -1645,8 +1636,7 @@ export const insuranceFinancialPosts: BlogPost[] = [
     ],
     author: AUTHORS.davidReeves,
     publishDate: '2025-10-06T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1554224155-8d04cb21cd6e?w=1200',
+    heroImage: '/images/blog/financial-planning-during-after-recovery.jpg',
     excerpt:
       'Addiction often devastates finances, but recovery provides an opportunity to rebuild. This guide covers practical financial planning strategies for people in recovery, including budgeting, debt management, credit repair, and building long-term financial stability in Southern California.',
     readingTime: 11,

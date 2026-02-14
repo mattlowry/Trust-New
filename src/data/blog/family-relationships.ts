@@ -25,8 +25,7 @@ export const familyRelationshipsPosts: BlogPost[] = [
     ],
     author: AUTHORS.robertKim,
     publishDate: '2025-01-08T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200',
+    heroImage: '/images/blog/how-to-help-loved-one-addiction.jpg',
     excerpt:
       'Watching someone you love struggle with addiction is painful and confusing. This guide walks you through how to help a loved one with addiction, from opening the conversation to finding professional treatment in Southern California.',
     readingTime: 10,
@@ -207,8 +206,7 @@ export const familyRelationshipsPosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-01-22T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=1200',
+    heroImage: '/images/blog/enabling-vs-helping-family-addiction.jpg',
     excerpt:
       'The line between enabling and helping a loved one with addiction is often blurry. This guide explains the critical difference between enabling vs. helping in addiction, so families can support recovery without unintentionally prolonging substance use.',
     readingTime: 9,
@@ -373,8 +371,7 @@ export const familyRelationshipsPosts: BlogPost[] = [
     ],
     author: AUTHORS.robertKim,
     publishDate: '2025-02-05T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=1200',
+    heroImage: '/images/blog/role-of-family-therapy-addiction-recovery.jpg',
     excerpt:
       'Family therapy in addiction recovery addresses the relational patterns that contribute to substance use. Learn how therapeutic approaches like CRAFT and structural family therapy help families heal together at treatment centers across Southern California.',
     readingTime: 11,
@@ -546,8 +543,7 @@ export const familyRelationshipsPosts: BlogPost[] = [
     ],
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-02-19T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=1200',
+    heroImage: '/images/blog/growing-up-with-addicted-parent.jpg',
     excerpt:
       'Growing up with an addicted parent leaves lasting marks on emotional development, relationships, and self-worth. This article examines the long-term effects of parental addiction and outlines evidence-based paths to healing for adult children of alcoholics and addicts.',
     readingTime: 11,
@@ -731,8 +727,7 @@ export const familyRelationshipsPosts: BlogPost[] = [
     ],
     author: AUTHORS.robertKim,
     publishDate: '2025-03-05T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1494774157365-9e04c6720e47?w=1200',
+    heroImage: '/images/blog/codependency-and-addiction.jpg',
     excerpt:
       'Codependency and addiction often go hand in hand, creating a destructive cycle that keeps both the codependent person and the addicted individual stuck. Learn how to recognize codependent patterns and take concrete steps to break free with support from Southern California treatment professionals.',
     readingTime: 10,
@@ -899,8 +894,7 @@ export const familyRelationshipsPosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-03-19T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200',
+    heroImage: '/images/blog/how-to-plan-intervention-guide.jpg',
     excerpt:
       'Planning an intervention for a loved one with addiction requires careful preparation and emotional readiness. This step-by-step guide on how to plan an intervention walks you through every stage, from assembling your team to following through on consequences, with insights from Southern California treatment professionals.',
     readingTime: 10,
@@ -1059,8 +1053,7 @@ export const familyRelationshipsPosts: BlogPost[] = [
     ],
     author: AUTHORS.davidReeves,
     publishDate: '2025-04-02T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?w=1200',
+    heroImage: '/images/blog/rebuilding-trust-after-addiction.jpg',
     excerpt:
       'Rebuilding trust after addiction is one of the most challenging aspects of recovery. Broken promises, lies, and hurtful behaviors leave deep wounds that require patience, consistency, and genuine change. This guide offers practical strategies for both the person in recovery and their loved ones.',
     readingTime: 9,
@@ -1214,8 +1207,7 @@ export const familyRelationshipsPosts: BlogPost[] = [
     ],
     author: AUTHORS.robertKim,
     publishDate: '2025-04-16T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=1200',
+    heroImage: '/images/blog/how-addiction-affects-marriage.jpg',
     excerpt:
       'Understanding how addiction affects marriage is the first step toward healing. From eroded trust and financial strain to emotional disconnection, substance use takes a devastating toll on partnerships. This guide explores the damage and outlines a path forward for couples in Southern California.',
     readingTime: 10,
@@ -1380,8 +1372,7 @@ export const familyRelationshipsPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-05-07T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200',
+    heroImage: '/images/blog/support-groups-families-addiction.jpg',
     excerpt:
       'Support groups for families of people with addiction provide community, education, and coping strategies that no one should have to develop alone. This guide compares the major family support programs available in Southern California and online, helping you find the right fit for your situation.',
     readingTime: 8,
@@ -1561,8 +1552,7 @@ export const familyRelationshipsPosts: BlogPost[] = [
     ],
     author: AUTHORS.robertKim,
     publishDate: '2025-06-04T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=1200',
+    heroImage: '/images/blog/setting-boundaries-addicted-family-member.jpg',
     excerpt:
       'Setting healthy boundaries with an addicted family member is one of the most loving things you can do for both yourself and your loved one. This guide provides practical strategies for establishing and maintaining boundaries that protect your well-being while keeping the door open for recovery.',
     readingTime: 9,

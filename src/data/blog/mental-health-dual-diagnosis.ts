@@ -21,8 +21,7 @@ export const mentalHealthDualDiagnosisPosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-01-08T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200',
+    heroImage: '/images/blog/dual-diagnosis-addiction-mental-health.jpg',
     excerpt:
       'Dual diagnosis occurs when addiction and a mental health disorder exist simultaneously. Discover why integrated treatment that addresses both conditions is essential for lasting recovery in Southern California.',
     readingTime: 10,
@@ -202,8 +201,7 @@ export const mentalHealthDualDiagnosisPosts: BlogPost[] = [
     ],
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-01-22T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1541199249251-f713e6145474?w=1200',
+    heroImage: '/images/blog/ptsd-and-addiction-trauma-substance-use.jpg',
     excerpt:
       'Addiction and anxiety disorders frequently co-occur, each amplifying the other in a destructive cycle. Understanding the connection between these conditions is essential for effective treatment in Southern California and beyond.',
     readingTime: 9,
@@ -534,8 +532,7 @@ export const mentalHealthDualDiagnosisPosts: BlogPost[] = [
     ],
     author: AUTHORS.drNavarro,
     publishDate: '2025-02-19T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?w=1200',
+    heroImage: '/images/blog/depression-and-substance-abuse.jpg',
     excerpt:
       'PTSD and addiction share a powerful connection rooted in the brain\'s response to trauma. Understanding how trauma fuels substance use is critical for recovery, especially at specialized treatment centers like Trust SoCal in Orange County.',
     readingTime: 11,
@@ -710,8 +707,7 @@ export const mentalHealthDualDiagnosisPosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-03-05T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200',
+    heroImage: '/images/blog/addiction-and-anxiety-disorders.jpg',
     excerpt:
       'Bipolar disorder carries one of the highest rates of co-occurring substance abuse among all psychiatric conditions. Integrated treatment addressing mood stabilization and addiction simultaneously is essential for recovery at centers like Trust SoCal in Orange County.',
     readingTime: 10,
@@ -872,8 +868,7 @@ export const mentalHealthDualDiagnosisPosts: BlogPost[] = [
     ],
     author: AUTHORS.robertKim,
     publishDate: '2025-03-19T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200',
+    heroImage: '/images/blog/adhd-and-addiction-elevated-risk.jpg',
     excerpt:
       'ADHD and addiction share overlapping neurobiology involving dopamine regulation and executive function. Adults with ADHD face two to three times the risk of developing a substance use disorder, making specialized treatment at centers like Trust SoCal in Orange County essential.',
     readingTime: 9,
@@ -1035,8 +1030,7 @@ export const mentalHealthDualDiagnosisPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-04-02T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1474418397713-7ede21d49118?w=1200',
+    heroImage: '/images/blog/self-medication-drugs-mental-health.jpg',
     excerpt:
       'Self-medication is the practice of using drugs or alcohol to manage untreated mental health symptoms. Understanding why people self-medicate is essential for effective dual diagnosis treatment at programs like Trust SoCal in Southern California.',
     readingTime: 9,
@@ -1211,8 +1205,7 @@ export const mentalHealthDualDiagnosisPosts: BlogPost[] = [
     ],
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-04-16T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200',
+    heroImage: '/images/blog/trauma-informed-care-addiction-treatment.jpg',
     excerpt:
       'Trauma-informed care is a treatment framework that recognizes the widespread impact of trauma and integrates this understanding into every aspect of addiction treatment. Learn how this approach transforms recovery outcomes at Trust SoCal in Orange County.',
     readingTime: 8,
@@ -1379,8 +1372,7 @@ export const mentalHealthDualDiagnosisPosts: BlogPost[] = [
     ],
     author: AUTHORS.drNavarro,
     publishDate: '2025-05-07T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200',
+    heroImage: '/images/blog/treating-co-occurring-disorders-integrated-approach.jpg',
     excerpt:
       'Treating co-occurring disorders requires an integrated approach that addresses mental health and addiction simultaneously. Learn how coordinated care models produce superior outcomes at specialized programs like Trust SoCal in Southern California.',
     readingTime: 11,
@@ -1556,8 +1548,7 @@ export const mentalHealthDualDiagnosisPosts: BlogPost[] = [
     ],
     author: AUTHORS.drNavarro,
     publishDate: '2025-06-04T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1585435557343-3b092031a831?w=1200',
+    heroImage: '/images/blog/managing-mental-health-medications-recovery.jpg',
     excerpt:
       'Managing mental health medications during addiction recovery requires careful coordination between psychiatric care and addiction treatment. Learn how Trust SoCal in Orange County ensures safe, effective medication management throughout the recovery process.',
     readingTime: 10,
