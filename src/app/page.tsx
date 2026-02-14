@@ -20,6 +20,14 @@ import { generateFAQSchema, generateWebSiteSchema } from '@/lib/schemas';
 import { getFAQsByPage } from '@/data/faqs';
 import { testimonials } from '@/data/testimonials';
 import { addictionTypes } from '@/data/addiction-types';
+import { generatePageMetadata } from '@/lib/metadata';
+
+export const metadata = generatePageMetadata({
+  title: 'Drug & Alcohol Rehab in Orange County, CA | Trust SoCal',
+  description:
+    'Trust SoCal is a JCAHO-accredited addiction treatment center in Fountain Valley, CA. We offer medical detox, residential treatment, dual diagnosis, IOP & PHP programs. Serving Orange County, Los Angeles & San Diego. Call (949) 280-8360.',
+  path: '/',
+});
 
 export default function Home() {
   const homeFAQs = getFAQsByPage('home');

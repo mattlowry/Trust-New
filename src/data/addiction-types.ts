@@ -83,8 +83,7 @@ export const addictionTypes: AddictionType[] = [
           'Yes. Several FDA-approved medications can help support alcohol recovery. Naltrexone reduces cravings and the rewarding effects of alcohol, acamprosate helps stabilize brain chemistry after withdrawal, and disulfiram causes unpleasant reactions when alcohol is consumed as a deterrent. Your physician will determine whether medication is appropriate as part of your overall treatment plan.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1569924256308-19e2b28c8eb3?w=1200',
+    heroImage: '/images/addiction-types/alcohol.jpg',
     metaTitle:
       'Alcohol Addiction Treatment in Orange County | Trust SoCal',
     metaDescription:
@@ -146,8 +145,7 @@ export const addictionTypes: AddictionType[] = [
           'Absolutely. Federal regulations under 42 CFR Part 2 provide additional privacy protections for substance use disorder treatment records beyond standard HIPAA requirements. Your treatment information cannot be disclosed without your written consent. We take confidentiality seriously and ensure your privacy is protected throughout every stage of care.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=1200',
+    heroImage: '/images/addiction-types/opioids.jpg',
     metaTitle:
       'Opioid Addiction Treatment in Orange County | Trust SoCal',
     metaDescription:
@@ -214,8 +212,7 @@ export const addictionTypes: AddictionType[] = [
           'Detox typically takes 5 to 7 days, followed by a recommended minimum of 30 to 90 days of primary treatment. However, heroin addiction recovery is a long-term process. Many clients benefit from ongoing medication-assisted treatment, continued outpatient therapy, and participation in aftercare programs for a year or more after completing primary treatment.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?w=1200',
+    heroImage: '/images/addiction-types/heroin.jpg',
     metaTitle:
       'Heroin Addiction Treatment in Orange County | Trust SoCal',
     metaDescription:
@@ -282,8 +279,7 @@ export const addictionTypes: AddictionType[] = [
           'Yes, though fentanyl addiction is among the most challenging substance use disorders to treat due to its potency and the intensity of cravings. Long-term recovery is absolutely achievable with comprehensive treatment that includes medical stabilization, behavioral therapy, medication-assisted treatment, and sustained aftercare. Many of our alumni have successfully maintained long-term sobriety after fentanyl addiction.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200',
+    heroImage: '/images/addiction-types/fentanyl.jpg',
     metaTitle:
       'Fentanyl Addiction Treatment in Orange County | Trust SoCal',
     metaDescription:
@@ -345,8 +341,7 @@ export const addictionTypes: AddictionType[] = [
           'Methamphetamine causes extensive damage to the brain\'s reward system by depleting dopamine and damaging dopamine receptors. This results in a prolonged period during early recovery where clients experience severe depression, inability to feel pleasure, fatigue, and intense cravings. The lack of FDA-approved pharmacological aids and the long neurological recovery timeline make sustained treatment engagement critical. However, with comprehensive, long-term treatment, many people achieve lasting recovery.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1200',
+    heroImage: '/images/addiction-types/methamphetamine.jpg',
     metaTitle:
       'Methamphetamine Addiction Treatment in Orange County | Trust SoCal',
     metaDescription:
@@ -408,8 +403,7 @@ export const addictionTypes: AddictionType[] = [
           'Treatment duration varies by individual, but a minimum of 90 days of engaged treatment is associated with significantly better outcomes for stimulant use disorders. Many clients benefit from 30 to 90 days of residential or PHP care followed by several months of IOP and ongoing aftercare. The key is sustained engagement; early dropout is the greatest predictor of relapse for cocaine addiction.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?w=1200',
+    heroImage: '/images/addiction-types/cocaine.jpg',
     metaTitle:
       'Cocaine Addiction Treatment in Orange County | Trust SoCal',
     metaDescription:
@@ -471,8 +465,7 @@ export const addictionTypes: AddictionType[] = [
           'Several effective alternatives exist, including non-addictive medications like SSRIs, SNRIs, and buspirone for ongoing anxiety management, as well as evidence-based psychotherapies such as CBT, which has been shown to be as effective as benzodiazepines for many anxiety disorders with more lasting benefits. Mindfulness-based stress reduction, regular exercise, and sleep hygiene practices are also powerful complementary approaches that we teach as part of our treatment program.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=1200',
+    heroImage: '/images/addiction-types/benzodiazepines.jpg',
     metaTitle:
       'Benzodiazepine Addiction Treatment in Orange County | Trust SoCal',
     metaDescription:
@@ -539,8 +532,7 @@ export const addictionTypes: AddictionType[] = [
           'Yes. Our medical team will review all of your current medications upon admission. Medications that are medically necessary and do not pose addiction risk will be continued under our medical supervision. Medications that may be contributing to your addiction or that interact with your treatment will be evaluated, and safe alternatives will be provided when needed.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=1200',
+    heroImage: '/images/addiction-types/prescription-drugs.jpg',
     metaTitle:
       'Prescription Drug Addiction Treatment in Orange County | Trust SoCal',
     metaDescription:
@@ -607,8 +599,7 @@ export const addictionTypes: AddictionType[] = [
           'The appropriate level of care depends on the severity of your cannabis use disorder, your living environment, and whether you have co-occurring conditions. Many individuals with marijuana addiction respond well to outpatient treatment such as IOP. However, if you have been unable to stop in an outpatient setting, if your home environment is not supportive of recovery, or if you have significant co-occurring mental health conditions, residential treatment may be recommended. Our clinical team will help determine the most appropriate level of care during your assessment.',
       },
     ],
-    heroImage:
-      'https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?w=1200',
+    heroImage: '/images/addiction-types/marijuana.jpg',
     metaTitle:
       'Marijuana Addiction Treatment in Orange County | Trust SoCal',
     metaDescription:

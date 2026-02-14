@@ -368,8 +368,7 @@ export const mentalHealthDualDiagnosisPosts: BlogPost[] = [
     ],
     author: AUTHORS.davidReeves,
     publishDate: '2025-02-05T09:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1493836512294-502baa1986e2?w=1200',
+    heroImage: '/images/blog/depression-and-substance-abuse.jpg',
     excerpt:
       'Depression and substance abuse form a devastating cycle where each condition fuels the other. Breaking this cycle requires integrated treatment that addresses the neurological, psychological, and behavioral dimensions of both disorders simultaneously.',
     readingTime: 10,

@@ -889,8 +889,7 @@ export const losAngelesResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.drNavarro,
     publishDate: '2025-05-15T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=1200',
+    heroImage: '/images/blog/la-county-mental-health-addiction-services.jpg',
     excerpt:
       'LA County mental health and addiction services encompass a vast network of public programs, community clinics, crisis intervention teams, and referral pathways. This overview helps residents understand the system and connect with appropriate care for substance use and co-occurring mental health disorders.',
     readingTime: 10,
@@ -1075,8 +1074,7 @@ export const losAngelesResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.robertKim,
     publishDate: '2025-06-01T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200',
+    heroImage: '/images/blog/rehab-options-san-fernando-valley.jpg',
     excerpt:
       'Rehab options in the San Fernando Valley range from community-based outpatient clinics to private residential programs. This guide helps Valley residents understand available treatment levels, evaluate programs, and consider nearby alternatives for a fresh start in recovery.',
     readingTime: 9,
@@ -1243,8 +1241,7 @@ export const losAngelesResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-06-18T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200',
+    heroImage: '/images/blog/public-recovery-stories-destigmatize-treatment.jpg',
     excerpt:
       'Public recovery stories play a powerful role in destigmatizing addiction treatment across Los Angeles and beyond. When individuals share their journeys openly, they challenge stereotypes, reduce shame, and inspire others to seek help. This article explores the impact of visible recovery on communities throughout LA County.',
     readingTime: 8,
@@ -1408,8 +1405,7 @@ export const losAngelesResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-07-10T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1527786356703-4b100091cd2c?w=1200',
+    heroImage: '/images/blog/why-la-residents-choose-orange-county-rehab.jpg',
     excerpt:
       'Why do LA residents choose Orange County for rehab? Many Los Angeles residents travel south for addiction treatment to benefit from a quieter environment, shorter wait times, and high-quality programs like Trust SoCal in Fountain Valley, all within easy reach via the 405 freeway.',
     readingTime: 9,
@@ -1576,8 +1572,7 @@ export const losAngelesResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.davidReeves,
     publishDate: '2025-08-05T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1200',
+    heroImage: '/images/blog/free-low-cost-addiction-resources-los-angeles.jpg',
     excerpt:
       'Free and low-cost addiction resources in Los Angeles County include publicly funded treatment programs, Medi-Cal-covered services, community clinics, twelve-step meetings, and harm reduction services. This guide helps residents access care regardless of financial situation.',
     readingTime: 10,

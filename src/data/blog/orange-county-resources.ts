@@ -866,8 +866,7 @@ export const orangeCountyResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.christinaMorales,
     publishDate: '2025-04-21T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200',
+    heroImage: '/images/blog/addiction-treatment-fountain-valley.jpg',
     excerpt:
       'Addiction treatment in Fountain Valley provides accessible, high-quality care in the heart of Orange County. Discover local rehab programs, what makes Fountain Valley an ideal recovery setting, and how Trust SoCal serves the community.',
     readingTime: 8,
@@ -1014,8 +1013,7 @@ export const orangeCountyResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.robertKim,
     publishDate: '2025-05-05T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200',
+    heroImage: '/images/blog/recovery-resources-huntington-beach.jpg',
     excerpt:
       'Recovery resources in Huntington Beach include sober living homes, daily AA and NA meetings, outdoor therapy opportunities, and a vibrant sober community. Learn how Surf City supports lasting recovery.',
     readingTime: 8,
@@ -1155,8 +1153,7 @@ export const orangeCountyResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-05-19T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200',
+    heroImage: '/images/blog/drug-alcohol-treatment-near-irvine.jpg',
     excerpt:
       'Drug and alcohol treatment near Irvine, CA includes a range of options from medical detox to outpatient therapy. Learn about programs in south Orange County and how to find the right fit for your recovery needs.',
     readingTime: 9,
@@ -1309,8 +1306,7 @@ export const orangeCountyResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.davidReeves,
     publishDate: '2025-06-02T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200',
+    heroImage: '/images/blog/costa-mesa-recovery-community.jpg',
     excerpt:
       'The Costa Mesa recovery community is widely recognized as one of the strongest in the nation. Learn why this Orange County city has become a hub for sobriety, with unmatched resources for sober living, meetings, and peer support.',
     readingTime: 9,
@@ -1472,8 +1468,7 @@ export const orangeCountyResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-07-14T08:00:00Z',
-    heroImage:
-      'https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200',
+    heroImage: '/images/blog/outdoor-activities-support-recovery-orange-county.jpg',
     excerpt:
       'Outdoor activities in Orange County provide powerful support for addiction recovery. Explore hiking trails, beach activities, surf therapy, cycling routes, and group fitness options that strengthen sobriety in one of the most naturally beautiful regions in California.',
     readingTime: 8,

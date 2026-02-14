@@ -873,8 +873,7 @@ export const sanDiegoResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-06-17',
-    heroImage:
-      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200',
+    heroImage: '/images/blog/san-diego-vs-orange-county-rehab.jpg',
     excerpt:
       'San Diego vs. Orange County rehab is a decision many Southern California residents face when seeking addiction treatment. This comparison examines treatment availability, clinical specialties, costs, and the evidence supporting geographic distance as a factor in recovery success.',
     readingTime: 10,
@@ -1037,8 +1036,7 @@ export const sanDiegoResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.drNavarro,
     publishDate: '2025-07-01',
-    heroImage:
-      'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200',
+    heroImage: '/images/blog/narcan-overdose-prevention-san-diego.jpg',
     excerpt:
       'Narcan distribution and overdose prevention in San Diego County are critical components of the region\'s response to the opioid crisis. This guide explains where to obtain free naloxone, how to recognize and respond to an overdose, and the broader harm reduction resources available throughout the county.',
     readingTime: 8,
@@ -1203,8 +1201,7 @@ export const sanDiegoResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.amandaCastillo,
     publishDate: '2025-07-15',
-    heroImage:
-      'https://images.unsplash.com/photo-1502680390548-bdbac40a5e60?w=1200',
+    heroImage: '/images/blog/beach-themed-recovery-programs-san-diego.jpg',
     excerpt:
       'Beach-themed recovery programs in San Diego integrate the healing power of the Pacific Ocean with evidence-based addiction treatment. From surf therapy at Oceanside Pier to mindfulness sessions on La Jolla shores, discover how coastal programming enhances recovery outcomes.',
     readingTime: 8,
@@ -1373,8 +1370,7 @@ export const sanDiegoResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.robertKim,
     publishDate: '2025-08-05',
-    heroImage:
-      'https://images.unsplash.com/photo-1529390079861-591de354faf5?w=1200',
+    heroImage: '/images/blog/youth-substance-abuse-prevention-san-diego.jpg',
     excerpt:
       'Youth substance abuse prevention in San Diego County encompasses school-based education, community coalitions, family support services, and fentanyl awareness campaigns. Learn about local programs protecting young people and what to do if your teen is already using substances.',
     readingTime: 9,
@@ -1552,8 +1548,7 @@ export const sanDiegoResourcesPosts: BlogPost[] = [
     ],
     author: AUTHORS.sarahEllison,
     publishDate: '2025-09-02',
-    heroImage:
-      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200',
+    heroImage: '/images/blog/why-san-diego-residents-choose-orange-county-rehab.jpg',
     excerpt:
       'Why San Diego residents choose Orange County rehab comes down to therapeutic distance, specialized programming, and access to facilities like Trust SoCal in Fountain Valley. Learn the practical and clinical reasons behind this increasingly common treatment decision.',
     readingTime: 11,

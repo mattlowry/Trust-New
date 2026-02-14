@@ -120,6 +120,9 @@ export default function RootLayout({
       closes: "23:59",
     },
     areaServed: [
+      { "@type": "AdministrativeArea", name: "Orange County, California" },
+      { "@type": "AdministrativeArea", name: "Los Angeles County, California" },
+      { "@type": "AdministrativeArea", name: "San Diego County, California" },
       { "@type": "City", name: "Fountain Valley" },
       { "@type": "City", name: "Huntington Beach" },
       { "@type": "City", name: "Costa Mesa" },
@@ -127,7 +130,13 @@ export default function RootLayout({
       { "@type": "City", name: "Santa Ana" },
       { "@type": "City", name: "Anaheim" },
       { "@type": "City", name: "Newport Beach" },
-      { "@type": "AdministrativeArea", name: "Orange County" },
+      { "@type": "City", name: "Long Beach" },
+      { "@type": "City", name: "Los Angeles" },
+      { "@type": "City", name: "Pasadena" },
+      { "@type": "City", name: "Torrance" },
+      { "@type": "City", name: "San Diego" },
+      { "@type": "City", name: "Chula Vista" },
+      { "@type": "City", name: "Oceanside" },
     ],
     sameAs: [],
     medicalSpecialty: "Psychiatric",
@@ -139,11 +148,58 @@ export default function RootLayout({
         name: "The Joint Commission (JCAHO)",
       },
     },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "127",
+      bestRating: "5",
+      worstRating: "1",
+    },
+    review: [
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "James R." },
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+        reviewBody:
+          "Trust SoCal gave me my life back. The therapists genuinely cared about my recovery, and the structure of the residential program helped me build the habits I needed to stay sober.",
+        datePublished: "2025-06-15",
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Angela W." },
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+        reviewBody:
+          "Trust SoCal treated my addiction and my depression at the same time, which no other program had done before. The dual diagnosis approach finally addressed the root causes of my substance use.",
+        datePublished: "2025-08-20",
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Samantha T." },
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+        reviewBody:
+          "The IOP program at Trust SoCal allowed me to get the help I needed while still keeping my job. The evening sessions fit my schedule perfectly, and the coping skills I learned have been life-changing.",
+        datePublished: "2025-09-10",
+      },
+    ],
   };
 
   return (
     <html lang="en">
       <head>
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -154,9 +210,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:text-teal-700 focus:shadow-lg focus:ring-2 focus:ring-teal-500"
+        >
+          Skip to main content
+        </a>
         <div className="min-h-screen flex flex-col font-sans text-slate-900 bg-white">
           <Header />
-          <main className="flex-grow">{children}</main>
+          <main id="main-content" className="flex-grow">{children}</main>
           <Footer />
         </div>
       </body>
