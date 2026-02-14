@@ -35,7 +35,7 @@ export function Hero() {
                         Get Help Now
                         <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
-                    <Button variant="outline" size="lg" className="h-14 px-8 text-lg w-full sm:w-auto border-white/20 text-white hover:bg-white/10 hover:text-white backdrop-blur-sm">
+                    <Button variant="outline" size="lg" className="h-14 px-8 text-lg w-full sm:w-auto bg-transparent border-white/20 text-white hover:bg-white/10 hover:text-white backdrop-blur-sm">
                         Verify Insurance
                     </Button>
                 </div>
