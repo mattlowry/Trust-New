@@ -200,10 +200,16 @@ export function Header() {
             <div className="w-full px-4 md:px-8 py-2">
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2 md:gap-4">
-                        <Logo className="h-20 md:h-28" />
-                        <div className="flex flex-col justify-center">
-                            <span className="text-sm md:text-lg font-bold text-slate-900 leading-none tracking-tight">Trust SoCal</span>
-                            <span className="text-[10px] md:text-xs font-medium text-slate-500 uppercase tracking-widest mt-0.5 md:mt-1">Drug & Alcohol Treatment Center</span>
+                        <Logo className="h-10 md:h-20 w-auto" />
+                        <div className="flex flex-col md:flex-col justify-center">
+                            <div className="flex flex-col md:hidden leading-tight">
+                                <span className="text-sm font-bold text-slate-900 leading-none">Trust SoCal</span>
+                                <span className="text-[10px] font-medium text-slate-500 uppercase tracking-tighter scale-90 origin-left">Drug & Alcohol Treatment Center</span>
+                            </div>
+                            <div className="hidden md:flex flex-col justify-center">
+                                <span className="text-base md:text-lg font-bold text-slate-900 leading-none tracking-tight">Trust SoCal</span>
+                                <span className="text-[10px] md:text-xs font-medium text-slate-500 uppercase tracking-widest mt-0.5 md:mt-1">Drug & Alcohol Treatment Center</span>
+                            </div>
                         </div>
                     </div>
 
